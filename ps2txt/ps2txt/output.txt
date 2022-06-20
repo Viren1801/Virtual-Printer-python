@@ -1,0 +1,6 @@
+The trial version will only convert the first a few pages from a PS (postscript) file to a text file,
+if you need to convert more pages, please purchase it from 'www.verydoc.com' site.
+Name: Viren Rathod
+Project: Virtual printer project
+Task: create and build a printer driver in visual studio
+

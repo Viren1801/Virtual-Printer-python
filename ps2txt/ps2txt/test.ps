@@ -1,0 +1,2989 @@
+%!PS-Adobe-2.0 
+%%Title: TIFF6.0 Spec.final
+%%Creator:  PageMaker 4.2
+%%CreationDate:  6-8-1992, 11:1:52
+%%For: Aldus Developers Desk
+%%BoundingBox:  0 0 612 792
+%%Pages: 10
+%%DocumentPrinterRequired: "" "(LaserWriter II NT)"
+%%DocumentFonts:  (atend) 
+%%DocumentSuppliedFonts:  (atend) 
+%%DocumentNeededFonts:  (atend) 
+%%DocumentNeededProcSets: 
+%%DocumentSuppliedProcSets: AldusDict2  209   55  
+%%DocumentPaperSizes: Letter
+%%DocumentProcessColors: 
+%%DocumentCustomColors: (Black)
+%%CMYKCustomColor:  0.00 0.00 0.00 1.00 (Black)
+%ALDEmbeddedColorEPS: false
+%%PageOrder: Special
+%%EndComments 
+%%BeginProcSet: AldusDict2  209   55  
+% 209	55			AldusVersion/AldRevision:  This record must be first!!
+% Copyright (C) 1987 Aldus Corporation. All rights reserved.
+
+/AldusDict2 325 dict def	
+AldusDict2
+begin													
+/AldusVersion 		209 	def		
+/AldusRev			55		def		
+/bdef { bind def } bind def
+systemdict /currentpacking known
+{/AD_OldPacking currentpacking def
+true setpacking
+} if
+/AD_PrevMatrix 		matrix 	def		
+/AD_SomethingOnPage	false	def		
+/AD_OutlineWidth	30		def		
+/AD_ShadOffset		0.06	def 	
+/AD_OLShadOffset	0.06	def 	
+/AD_OLSmearFact		0.03	def 	
+/AD_BoldSmearFact	0.03	def 	
+/AD_ObliqueAngle	-0.21	def 	
+/AD_TrueSetscreen /setscreen load def 
+/AD_NestedMirror false def		
+/AD_TextCutout false def	
+/BEGJOB 											
+{	/AD_Invert		exch def
+dup AD_NestedMirror xor /AD_NestedMirror exch def
+/AD_MirrorFlag	exch def
+/AD_WideFlag	exch def
+/paperwid		exch def
+/paperht 		exch def
+/AD_Resolution	1440 def
+/AD_PointsToUCS	AD_Resolution 72 div def
+AD_PrevMatrix currentmatrix pop
+/AD_PrevScreen [currentscreen] def
+/AD_PrevTransfer currenttransfer def
+/AD_StdScreen true def
+/STD_SCREEN
+{
+AD_StdScreen not
+{
+AD_PrevScreen cvx exec setscreen
+/AD_PrevTransfer load settransfer
+/AD_StdScreen true assign
+}if
+} def
+true _SetCoordSys
+version (23.) anchorsearch 
+{
+pop pop
+/truesetgray /setgray load def
+/setgray
+{
+mark
+AD_Invert
+{.0 .0 .06 .1 .28 .48 .56 .68 .82 .9 .98 1.0 }
+{1.0 1.0 .98 .9 .82 .68 .56 .48 .28 .1 .06 .0 }
+ifelse
+counttomark dup 3 add -1 roll exch
+2 sub mul dup floor cvi
+dup 3 1 roll sub
+exch dup 
+3 add index exch 2 add index dup
+4 1 roll
+sub mul add
+counttomark 1 add 1 roll 
+cleartomark
+truesetgray
+} def
+}
+{ pop }
+ifelse
+/screenAdjust 1 0 dtransform exch atan def
+/mirrorScreen AD_NestedMirror {/neg load} {{}} ifelse def
+/setscreen {exch screenAdjust add mirrorScreen exch AD_TrueSetscreen} def
+} def			
+/_SetCoordSys
+{
+/AD_OldSys exch def
+AD_WideFlag
+{	AD_OldSys
+{
+90 rotate 
+1 AD_PointsToUCS div dup neg scale
+}
+{
+1 AD_PointsToUCS div dup neg scale
+paperht paperwid neg translate
+90 rotate
+}
+ifelse
+}
+{ 1 AD_PointsToUCS div dup neg scale
+0 paperht neg translate
+} 
+ifelse
+AD_MirrorFlag
+{ paperwid 0 translate
+-1 1 scale
+} 
+if
+/AD_DeviceScale
+1 1 transform pop 0 0 transform pop sub abs 
+def
+} bdef
+/SETRES 											
+{
+/AD_Resolution	exch def
+/AD_PointsToUCS	AD_Resolution 72 div def
+AD_PrevMatrix setmatrix
+false _SetCoordSys
+_DefinePatterns	
+} bdef			
+/SETOVERPRINT
+{
+setoverprint
+} bdef
+/SETTEXTCUTOUT
+{
+/AD_TextCutout exch def
+}	bdef
+/BEGPAGE 											
+{	/AD_SomethingOnPage	false def
+} 	bdef			
+/ENDPAGE 											
+{	AD_SomethingOnPage 
+{ save
+showpage 
+restore 
+} if
+} 	def 
+/MUST_PRINT_PAGE
+{	/AD_SomethingOnPage	true def
+} bdef
+/ENDJOB 											
+{	AD_PrevMatrix setmatrix
+} 	bdef											
+/S_PSCRIPT											
+{	/AD_SomethingOnPage	true def
+} 	bdef											
+/S_TEXTSEGBEG											
+{	/here save def
+/TX_RunDrawn false def
+newpath
+} 	bdef											
+/S_TEXTSEGEND											
+{	TX_RunDrawn
+{ here restore
+/AD_SomethingOnPage true def }
+{ here restore } ifelse
+} 	bdef											
+/S_WORKING
+{
+/AD_WorkingMemory exch def
+} bdef
+/S_LOADFONT
+{
+AldusDict2 /AD_TopOfFonts known exch
+{ { AD_TopOfFonts restore } if }
+{ not { save /AD_TopOfFonts exch def } if	}
+ifelse
+} bdef
+/SURSTR
+{
+AD_SomethingOnPage SUsv restore
+} bdef
+/SUSAVE
+{
+AldusDict2 /AD_TopOfFonts known 
+vmstatus exch sub exch pop AD_WorkingMemory lt 
+{ dup { AD_TopOfFonts restore } if } if
+not					
+{ save /AD_TopOfFonts exch def } if	
+save /SUsv exch def /AD_SomethingOnPage exch def
+} bdef
+/_ftName 66 string def
+/_AutoRecode
+{	
+/recode exch def
+_ftName cvs
+dup length 7 gt
+{	dup 0 7 getinterval (|______) eq
+{	dup length 7 exch 7 sub getinterval 
+recode { FTRECODE } { FTRENAME } ifelse
+}
+{ pop }
+ifelse
+}
+{ pop } ifelse
+} bdef
+/SYM_SAV
+{
+save /SYMsv exch def	
+} bdef
+/SYM_RSTR
+{
+AD_SomethingOnPage
+SYMsv restore
+/AD_SomethingOnPage exch def
+} bdef
+/AD_save_xform	null def
+/SET_TX_XFORM
+{
+/m_x exch def		
+/r_angle exch def	
+/ref_y exch def
+/ref_x exch def		
+/AD_save_xform	save def
+ref_x ref_y translate	
+m_x
+{
+-1 1 scale
+} if
+r_angle neg rotate			
+ref_x neg ref_y neg translate	
+} bind def
+/CLEAR_TX_XFORM
+{
+AD_SomethingOnPage AD_save_xform restore
+/AD_SomethingOnPage exch def
+} bind def
+/SHADOWFLAG		16#1  def			
+/OUTLINEFLAG	16#2  def	 		
+/BOLDSMEAR		16#4  def	 		
+/OUTLINESMEAR	16#8  def	 		
+/ReENCODED		16#10 def			
+/BOLDPSBUMP		16#20 def			
+/ITALICOBLIQUE	16#40 def			
+/SET			
+{	
+count 5 eq not{6 array astore}if
+/AD_textcolor	exch def	
+/AD_fontbits	exch def	
+/AD_20EMS		exch def	
+1 index FontDirectory exch known not 
+{ 1 index ReENCODED AD_fontbits _iand _AutoRecode } if 
+BOLDPSBUMP AD_fontbits _iand
+{	1 add } if
+dup _ActivateFont
+ITALICOBLIQUE AD_fontbits _iand
+{ 	_ActivateObliqueFont 
+} if
+/AD_width_factor_internal AD_width_factor def
+AD_width_factor 1 ne					
+{
+currentfont [AD_width_factor 0 0 1 0 0] makefont setfont
+} if
+/AD_EmNotMatch AD_20EMS 20 div (M) _ADStringWidth pop sub abs 1 gt def
+false SETTEXTCUTOUT
+} 	bdef											
+/S_SETUPRUN /SET load def		
+/OUT				
+{	/here save def
+/runwidth		exch def
+/nspaces		exch def
+/nchars			exch def
+/textrun		exch def
+/letterspace	exch def	
+/wordspace		exch def
+/y1 exch def	/x1 exch def
+nchars 0 gt
+{	
+AD_textcolor dup _Gray?
+{setgray}
+{aload pop 
+{PREGISCOLOR}{PCOLOR}ifelse
+} ifelse
+/letterspace
+AD_EmNotMatch
+{	
+runwidth					
+textrun _ADStringWidth pop 
+nchars dup 1 gt {1 sub} if
+letterspace mul add		
+nspaces wordspace mul add	
+sub						
+nchars dup 1 gt {1 sub} if
+div						
+}
+{	
+0 } ifelse 					
+letterspace add def				
+SHADOWFLAG AD_fontbits _iand
+{	save
+OUTLINEFLAG AD_fontbits _iand
+{	_OLShadowOffset
+}
+{	
+AD_textcolor _Gray?{_ShadowScreen}if
+AD_textcolor _ShadowColor
+_ShadowOffset
+} ifelse 
+OUTLINEFLAG AD_fontbits _iand
+OUTLINESMEAR AD_fontbits _iand not and 
+{	_ActivateSolidFont
+_SetTextWidth
+} if 
+AD_TextCutout
+{1 setgray} if
+_ShowRun
+BOLDSMEAR AD_fontbits _iand
+{	_BoldSmearOffset _ShowRun
+} if 
+restore
+} if 
+OUTLINEFLAG AD_fontbits _iand 
+OUTLINESMEAR AD_fontbits _iand and
+{	_OLSmearRun
+}
+{	OUTLINEFLAG AD_fontbits _iand
+{	save
+_ActivateSolidFont
+_SetTextWidth
+AD_textcolor _Gray? AD_textcolor _White? or
+{ AD_textcolor _White?
+{0}
+{_TextFillColor}
+ifelse 
+setgray }
+{ 1 setgray 
+}ifelse
+_ShowRun
+restore
+} if 
+_ShowRun
+BOLDSMEAR AD_fontbits _iand
+{	_BoldSmearOffset _ShowRun
+} if 
+} ifelse 
+} if 
+here restore
+/AD_SomethingOnPage true def
+} 	bdef											
+/S_OUTPUTRUN /OUT load def		
+/_ADStringWidth										
+{
+gsave closepath clip stringwidth grestore	
+} 	bdef
+/_OLSmearRun										
+{	
+gsave _OLSmearOffset translate _ShowRun grestore			
+gsave _OLSmearOffset exch neg exch translate _ShowRun grestore			
+gsave _OLSmearOffset neg translate _ShowRun grestore			 							
+gsave _OLSmearOffset neg exch neg exch translate _ShowRun grestore	
+gsave 
+AD_textcolor _Gray? AD_textcolor _White? or
+{ AD_textcolor _White?
+{0}
+{ _TextFillColor}
+ifelse
+setgray }
+{ 1 setgray 
+}ifelse
+_ShowRun grestore
+} 	bdef
+/_TextFillColor
+{
+AD_TextCutout
+{1}
+{1 AD_textcolor sub} ifelse
+} bdef 
+/_ShowRun										
+{	
+x1 y1 moveto 
+wordspace 0 8#040 letterspace 0 textrun awidthshow
+} 	bdef
+/AD_width_factor_internal		1 def			
+/_SetTextWidth
+{
+AD_width_factor_internal 1 ne					
+{
+currentfont [AD_width_factor_internal 0 0 1 0 0] makefont setfont
+} if
+} bdef
+/AD_save_textwidth	null def		
+/SET_TEXT_WIDTH
+{
+/AD_width_factor_internal exch def	
+/AD_save_textwidth	save def
+_SetTextWidth														
+} bdef
+/RESTORE_TEXT_WIDTH
+{
+AD_SomethingOnPage AD_save_textwidth restore
+/AD_SomethingOnPage exch def
+/AD_width_factor_internal 1 def
+} bdef
+/AD_width_factor		1	def
+/SET_TX_WIDTH
+{
+/AD_width_factor	exch def
+} bdef
+/CLEAR_TX_WIDTH
+{
+/AD_width_factor 1	def
+} bdef
+/S_UNDERLINE										
+{	/here save def
+count 7 eq not{6 array astore}if
+/color			exch def
+/pointsize		exch def
+/width			exch def
+/deltay			exch def
+/baseline		exch def
+/rightx			exch def
+/leftx			exch def
+currentfont /FontInfo known
+{	
+currentfont /FontInfo get
+/UnderlinePosition known
+{	/deltay 
+currentfont /FontInfo get 
+/UnderlinePosition get 
+currentfont /FontMatrix get 3 get mul 
+pointsize AD_fontscale AD_PointsToUCS 
+div div mul def
+} if 
+currentfont /FontInfo get
+/UnderlineThickness known
+{	/width
+currentfont /FontInfo get
+/UnderlineThickness get 
+currentfont /FontMatrix get 3 get abs mul 
+pointsize AD_fontscale AD_PointsToUCS 
+div div mul def
+} if 
+} if 
+/underliney 
+0 baseline deltay add transform 
+round exch round exch itransform exch pop def
+color dup _Gray?
+{setgray}{aload pop 
+{PREGISCOLOR}{PCOLOR}ifelse
+}ifelse
+width setlinewidth
+SHADOWFLAG AD_fontbits _iand
+{	save
+OUTLINEFLAG AD_fontbits _iand 
+{	_OLShadowOffset
+}
+{	
+color _Gray?{_ShadowScreen}if
+color _ShadowColor
+_ShadowOffset
+} ifelse 
+leftx underliney rightx underliney _ShowUnderline	 							
+restore
+} if 
+leftx underliney rightx underliney _ShowUnderline
+OUTLINEFLAG AD_fontbits _iand
+OUTLINESMEAR AD_fontbits _iand not and 
+{	
+save
+color _Gray?{1 color sub setgray}
+{0 0 0 0 setcmykcolor 
+}ifelse
+/AD_OutlineWidth
+AD_OutlineWidth 1000 div AD_fontscale mul def
+width 3 AD_OutlineWidth mul ge
+{ width 2 AD_OutlineWidth mul sub }
+{ width 3 div } ifelse
+setlinewidth
+leftx AD_OutlineWidth add underliney
+rightx AD_OutlineWidth sub underliney _ShowUnderline
+restore
+} if 
+here restore
+/AD_SomethingOnPage true def
+} 	bdef
+/_ShowUnderline										
+{
+newpath moveto lineto stroke	
+} 	bdef
+/S_STRIKETHRU											
+{	/here save def
+count 4 eq not{6 array astore}if
+/color			exch def
+/y				exch def
+/rightx			exch def
+/leftx			exch def
+/y	0 y transform 
+round exch round exch itransform exch pop def
+color _Gray?
+{color setgray}{color aload pop 
+{PREGISCOLOR}{PCOLOR}ifelse
+}ifelse
+_StrikeThruWidth setlinewidth
+newpath
+leftx  y moveto
+rightx y lineto stroke
+here restore
+/AD_SomethingOnPage true def
+} 	bdef											
+/DV_DRAW_TEXT											
+{	/here save def
+/text	exch def
+/y 		exch def	
+/x 		exch def
+Black setgray
+(Helvetica-Bold) FTRECODE
+/|______Helvetica-Bold 9 dup _ActivateFont 
+x y moveto
+text show					
+here restore
+/AD_SomethingOnPage	true def
+} 	bdef											
+/DV_DRAW_BOX											
+{	/here save def
+/draftflag exch def
+/shadowflag exch def
+/y2 exch def	/x2 exch def
+/y1 exch def	/x1 exch def
+AD_PointsToUCS 2 div setlinewidth
+newpath
+x1 y1 moveto
+x1 y2 lineto
+x2 y2 lineto
+x2 y1 lineto closepath 
+shadowflag
+{ gsave STD_SCREEN 0.5 setgray fill grestore}
+{ gsave
+1.0 setgray fill
+grestore 
+0.0 setgray stroke } ifelse
+draftflag
+{ x1 y1 moveto
+x2 y2 lineto stroke
+x2 y1 moveto
+x1 y2 lineto stroke } if
+here restore
+/AD_SomethingOnPage	true def
+} 	bdef
+/DV_DRAW_LINE											
+{	/here save def
+/lw exch def
+/y2 exch def	/x2 exch def
+/y1 exch def	/x1 exch def
+x1 y1 transform 
+round exch round exch itransform /y1 exch def /x1 exch def
+x2 y2 transform 
+round exch round exch itransform /y2 exch def /x2 exch def
+0 lw transform 
+round exch round exch itransform /lw exch def pop
+lw setlinewidth
+0 setseparationgray
+newpath
+x1 y1 moveto
+x2 y2 lineto stroke
+here restore
+/AD_SomethingOnPage	true def
+} 	def 
+/DV_DRAW_CIRCLE											
+{	/here save def
+/lw exch def
+/r	exch def
+/y	exch def		/x exch def
+x y transform 
+round exch round exch itransform /y exch def /x exch def
+0 r transform 
+round exch round exch itransform /r exch def pop
+0 lw transform 
+round exch round exch itransform /lw exch def pop
+lw setlinewidth
+Black setgray
+newpath
+x y r 0 360 arc stroke
+here restore
+/AD_SomethingOnPage	true def
+} 	bdef											
+/_ActivateFont										
+{	
+/AD_fontscale 	exch AD_PointsToUCS mul def
+/AD_fontscaleX	exch AD_PointsToUCS mul def
+/AD_fontname 	exch def
+AD_fontname findfont
+[ AD_fontscaleX 0 0 AD_fontscale neg 0 0 ] makefont
+setfont	
+} 	bdef
+/_ActivateObliqueFont										
+{	
+AD_fontname findfont
+[ AD_fontscaleX 0 0 AD_fontscale neg 0 0 ] 
+[ 1 0 
+AD_ObliqueAngle 
+1 0 0 ] matrix concatmatrix makefont setfont	
+} 	bdef
+/_ActivateSolidFont										
+{	
+AD_solidfont 
+AD_fontscaleX AD_PointsToUCS div 
+AD_fontscale AD_PointsToUCS div _ActivateFont
+} 	bdef
+/_ShadowOffset										
+{	
+AD_ShadOffset AD_fontscaleX mul AD_ShadOffset AD_fontscale mul translate	
+} 	bdef
+/_OLShadowOffset										
+{	
+AD_OLShadOffset AD_fontscaleX mul AD_OLShadOffset AD_fontscale mul translate	
+} 	bdef
+/_ShadowScreen										
+{	
+100 AD_PrevScreen 1 get AD_PrevScreen 2 get setscreen
+} 	bdef	
+/_ShadowColor										
+{	
+dup _Gray? exch dup _White? 3 -1 roll or
+{ dup _White?
+{pop 1
+}if 
+0.6 mul 0.8 exch sub setgray}
+{_ShadeColor
+}ifelse
+} 	bdef
+/_ShadeColor
+{	
+/AldusTint .2 def 
+aload pop {PREGISCOLOR}{PCOLOR}ifelse
+/AldusTint 1 def
+}	bdef
+/_Gray?
+{ 
+dup type 0 type eq exch type 0.0 type eq or
+} bdef
+/_White?
+{ 	
+dup type [] type eq
+{aload pop pop pop add add add 0 eq
+{true}{false
+}ifelse
+}{pop false
+}ifelse
+} bdef
+/PCOLOR
+{
+findcmykcustomcolor	
+AD_NonSepPat 
+{1 currentgray sub setcustomcolor}
+{AldusTint setcustomcolor}ifelse
+} def 
+/ndf
+{
+1 index where
+{pop pop pop}{dup xcheck
+{bind
+}if
+def
+}ifelse
+} bdef	
+/setoverprint
+{
+AldusDict2 begin /AD_Overprint exch def end
+}ndf
+/currentoverprint
+{
+AldusDict2 /AD_Overprint get
+}ndf
+/setcmykcoloroverprint
+{
+4{dup -1 eq{pop 0}if 4 1 roll}repeat setcmykcolor
+}ndf	
+/findcmykcustomcolor
+{	
+5 /packedarray where 
+{pop packedarray}{array astore readonly
+}ifelse
+}ndf	
+/setcustomcolor
+{
+exch aload pop pop 4
+{4 index mul 4 1 roll
+} repeat
+setcmykcolor pop
+}ndf	
+/setcmykcolor
+{
+1 exch sub _Ccmyk _Ccmyk _Ccmyk pop setrgbcolor
+}ndf	
+/customcolorimage
+{
+pop image 
+}ndf
+/separationimage
+{
+image
+}ndf
+/setseparationgray
+{
+setgray
+}ndf
+/_Ccmyk
+{
+dup 5 -1 roll sub 0 _Max exch
+}bdef	
+/_Max
+{
+2 copy lt
+{exch
+}if
+pop
+} bdef
+/_OLSmearOffset										
+{	
+AD_OLSmearFact AD_fontscaleX mul AD_OLSmearFact AD_fontscale mul
+} 	bdef
+/_BoldSmearOffset										
+{	
+AD_BoldSmearFact AD_fontscaleX mul AD_BoldSmearFact AD_fontscale mul translate
+} 	bdef
+/_StrikeThruWidth										
+{	
+AD_fontscale 16 div
+} 	bdef
+/_iand										
+{	and 0 ne 	  
+} 	bdef
+/FTRENAME {
+dup (|______) exch ftMakeName cvn /NewName local
+FontDirectory NewName known
+{pop}
+{cvn findfont dup
+maxlength dict false copyDict
+dup /FontName known
+{dup /FontName NewName put} if
+NewName exch definefont pop
+} ifelse
+} bdef
+/FTRECODE {
+dup (|______) exch ftMakeName cvn /NewName local
+FontDirectory NewName known
+{pop}
+{cvn findfont dup
+maxlength dict false copyDict
+dup /FontName known
+{dup /FontName NewName put} if
+dup /Encoding MacEncoding put
+NewName exch definefont pop
+} ifelse
+} bdef
+/AD_encode_vector_size	256 def
+/AD_encode_vector	null	def
+/AD_doing_recoding false def
+/BEG_RECODE
+{
+dup (|______) exch ftMakeName cvn /NewName local
+FontDirectory NewName known
+{
+pop
+/AD_doing_recoding false def
+/AD_encode_vector null def
+}
+{cvn findfont dup
+maxlength dict false copyDict
+dup /FontName known
+{dup /FontName NewName put} if
+/AD_encode_vector AD_encode_vector_size array def
+dup begin Encoding AD_encode_vector copy pop end
+dup /Encoding AD_encode_vector put
+NewName exch definefont pop
+/AD_doing_recoding true def
+AD_encode_vector	
+dup
+} ifelse
+} bdef
+/ENCODE_CHAR
+{
+AD_doing_recoding
+{
+put
+dup
+}
+{
+pop
+pop
+} ifelse
+} bdef
+/END_RECODE
+{
+AD_doing_recoding
+{
+pop
+pop
+} if
+/AD_doing_recoding false def
+/AD_encode_vector null def
+} bdef
+/FTOUTLINE {
+ReENCODED FTOLINE
+} bdef
+/FTOLINE {
+/AD_fontbits exch def
+cvn /OlineName local
+dup /AD_solidfont exch def
+AD_solidfont FontDirectory exch known not 
+{ AD_solidfont ReENCODED AD_fontbits _iand _AutoRecode } if 
+FontDirectory OlineName known
+{pop}
+{cvn findfont dup
+maxlength 2 add dict true copyDict
+dup /FontName known
+{dup /FontName OlineName put} if
+dup /PaintType 2 put
+dup /StrokeWidth AD_OutlineWidth put
+OlineName exch definefont pop
+} ifelse
+} bdef
+/AD_nameString1 66 string def			
+/ftMakeName {
+1 index length /PrefixLen local
+dup length PrefixLen add AD_nameString1 exch 0 exch getinterval
+dup PrefixLen 4 -1 roll putinterval
+dup 0 4 -1 roll putinterval
+} bdef
+/copyDict {
+/NoUnique local
+begin
+{ 1 index /FID ne
+NoUnique
+{2 index /UniqueID ne and} if
+{ def } { pop pop } ifelse
+} forall
+currentdict
+end
+} bdef
+/MacEncoding 256 array def
+MacEncoding 0
+/Times-Roman findfont /Encoding get
+0 128 getinterval
+putinterval
+MacEncoding 16#27 /quotesingle put
+MacEncoding 16#60 /grave put
+/Adieresis /Aring /Ccedilla /Eacute /Ntilde /Odieresis /Udieresis /aacute
+/agrave /acircumflex /adieresis /atilde /aring /ccedilla /eacute /egrave
+/ecircumflex /edieresis /iacute /igrave /icircumflex /idieresis /ntilde /oacute
+/ograve /ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex /udieresis
+/dagger /degree /cent /sterling /section /bullet /paragraph /germandbls
+/registersans /copyrightsans /trademarksans /acute /dieresis /notequal /AE /Oslash
+/infinity /plusminus /lessequal /greaterequal /yen /mu /partialdiff /summation
+/product /pi /integral /ordfeminine /ordmasculine /Omega /ae /oslash
+/questiondown /exclamdown /logicalnot /radical /florin /approxequal /Delta /guillemotleft
+/guillemotright /ellipsis /space /Agrave /Atilde /Otilde /OE /oe
+/endash /emdash /quotedblleft /quotedblright /quoteleft /quoteright /divide /lozenge
+/ydieresis /Ydieresis /fraction /currency /guilsinglleft /guilsinglright /fi /fl
+/daggerdbl /periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute
+/Edieresis /Egrave /Iacute /Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex
+/apple /Ograve /Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde
+/macron /breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+MacEncoding 128 128 getinterval astore pop
+/getAnInt{2 getinterval dup 0 get 16#100 mul exch 1 get add cvi}def
+/CharBitStr 30 string def
+/BuildCharDict 16 dict def
+/AFONT
+{
+gsave
+/FName local
+/BMFSize local
+1 add /LastChar local
+/FirstChar local
+/DefChar LastChar FirstChar sub 2 mul def
+20 dict dup 
+begin 
+10 1 roll
+/LocTableLen local
+/OWTableLen local
+/BMRowLen local
+/PixelHeight local
+/FontWidth local
+/MaxWidth local
+/MaxKern local
+/Descent local
+/Ascent local
+/Bits BMRowLen PixelHeight mul string currentfile exch readhexstring pop def
+/LocTable LocTableLen string currentfile exch readhexstring pop def
+/OWTable OWTableLen string currentfile exch readhexstring pop def
+/FontType 3 def
+/FontMatrix matrix def
+/FontBBox[MaxKern Descent neg MaxWidth MaxKern add Ascent]def
+/Encoding 256 array def
+Encoding 0 MacEncoding 0 256 getinterval putinterval
+/Mummble 257 array def
+0 1 256{Mummble exch DefChar put}for
+FirstChar 1 LastChar{Mummble exch dup FirstChar sub 2 mul put}for
+/BuildChar
+{
+BuildCharDict 
+begin
+/1Char local
+/FDict local
+FDict /Mummble get 1Char get /2Char local
+FDict /OWTable get 2Char getAnInt 16#FFFF eq
+{/2Char DefChar assign}if
+FDict /LocTable get 2Char getAnInt
+/BitLoc local
+FDict /LocTable get 2Char 2 add getAnInt
+BitLoc sub
+/BitWidth local
+BitLoc 8 mod /ShiftVal local
+16#FF 8 ShiftVal sub
+dup neg /RemShift local
+bitshift 16#FF and /BMask local
+16#FF 8 BitLoc BitWidth add 8 mod
+sub dup 8 ge{pop 0}if
+BitWidth 0 eq{pop 8}if
+bitshift /AMask local
+BitWidth ShiftVal add 7 add 8 idiv
+dup 0 eq{pop 1}if
+/ByteWidth local
+BitLoc 8 idiv
+/WhichRow local
+FDict /OWTable get 2Char get cvi /Offset local
+FDict /OWTable get 2Char 1 add get cvi /Charwidth local
+Charwidth 0 BMFSize divPoint
+FDict /MaxKern get FDict /Descent get neg BMFSize divPoint
+BitWidth Offset add FDict /MaxKern get add FDict /Ascent get BMFSize divPoint
+setcachedevice
+gsave
+ByteWidth 8 mul
+FDict /PixelHeight get
+true
+[FDict /PixelHeight get FDict /Descent get sub 1 add
+0
+0
+FDict /PixelHeight get FDict /Descent get sub 1 add neg
+Offset neg 0.5 add
+FDict /PixelHeight get FDict /Descent get sub 0.5 add]
+{ 
+FDict /Bits get WhichRow
+ByteWidth getinterval
+CharBitStr copy /ThisRow local
+16#100
+ByteWidth 1 sub 1 neg 0
+{	/iV local
+ThisRow iV get
+1 index 16#100 eq{AMask and}if
+dup BMask and RemShift bitshift
+3 1 roll ShiftVal bitshift
+add 16#FF and
+cvi ThisRow iV 3 -1 roll put
+}for
+pop ThisRow
+/WhichRow WhichRow FDict /BMRowLen get add assign
+} imagemask
+grestore
+end 
+}def 
+end
+FontDirectory FName cvn known
+{pop}
+{FName cvn exch definefont pop} ifelse
+grestore
+}def 
+/AldusTint 1 def	
+/AD_Overprint false def	
+/AD_NonSepPat false def 	
+/const /def load def
+/var /def load def
+/local[/exch load /def load]cvx def
+/assign /def load def
+/incr{dup cvx exec 1 add assign}bdef
+/postIncr{dup cvx exec exch incr}bdef
+/SpaceChar 16#20 const
+/cvPA{2 array astore cvx}bdef
+/point{cvPA def}bdef
+/locPoint{3 1 roll point}bdef
+/pointXpoint{3 -1 roll mul 3 1 roll mul exch}bdef
+/pointDpoint{3 -1 roll exch div 3 1 roll div exch}bdef
+/setPoint{load astore pop}bdef
+/dupPoint{2 copy}bdef
+/addPoint{exch 4 -1 roll add 3 1 roll add}bdef
+/subPoint{exch 3 1 roll sub 3 1 roll sub exch}bdef
+/mulPoint{dup pointXpoint}bdef
+/divPoint{dup pointDpoint}bdef
+/exchPoint{4 2 roll}bdef
+/overPoint{3 index 3 index}bdef
+/anyStatD systemdict /statusdict known const
+/thisProduct anyStatD
+{statusdict /product known{statusdict /product get}{()}ifelse}
+{()}ifelse const
+/PerCentChg 1.0 -1.0 point
+/boxPath{/y2 local /x2 local /y1 local /x1 local
+x1 y1 moveto x2 y1 lineto x2 y2 lineto x1 y2 lineto
+closepath}bdef
+/dump{4{pop}repeat}bdef
+/rBoxPath{/r local /y2 local /x2 local
+/y1 local /x1 local
+x1 r add y1 moveto x2 y1 x2 y2 r arcto dump
+x2 y2 x1 y2 r arcto dump x1 y2 x1 y1 r arcto dump
+x1 y1 x2 y1 r arcto dump closepath}bdef
+/SaveMatrix matrix var
+/ButtCap   0 const
+/SquareCap 2 const
+/MiterJoin 0 const
+/BevelJoin 2 const
+/Black 0 const
+/White 1 const
+/Wide  0 const
+/Narrow 1 const
+/PictPostScript false var
+/isHairline false var
+/PBEGIN{
+dup not {save /PSave exch def} if
+/isLBO exch def
+/PBotRight locPoint
+/PTopLeft locPoint
+isLBO not {newpath PTopLeft PBotRight boxPath clip} if newpath
+isLBO {ButtCap}{SquareCap} ifelse setlinecap
+MiterJoin setlinejoin
+3 setmiterlimit
+AD_PointsToUCS setlinewidth
+/deviceRound
+{
+dup
+AD_DeviceScale mul round AD_DeviceScale div
+dup 0 eq { pop } { exch pop } ifelse 
+} def
+/HairWidth 
+AD_PointsToUCS 4 div 
+AD_DeviceScale mul deviceRound dup 1.5 lt
+{ pop 0 } if
+const
+Black setgray
+/LineScale 1 var
+/LineWidth  AD_PointsToUCS var
+/LineHeight AD_PointsToUCS var
+/DoingWedge false var
+/DoingArc   false var
+AldusDict2 /PatternShade known not
+{
+/psb {} bdef				
+/pse {} bdef
+/PatternShade Black var
+/DeclaredPattern <00> var
+/PCurPat         <01> var 
+} if
+}bdef
+/PEND{
+newpath
+isLBO not {PSave restore} if
+/AD_SomethingOnPage	true def
+}bdef
+/SetPattern {
+dup /PatternShade exch def setgray
+} bdef
+/bitison{
+/ybit local /xbit local
+PCurPat ybit PatWidth mul
+xbit 8 idiv add get
+1 7 xbit 8 mod AD_NestedMirror {exch pop}{sub} ifelse bitshift
+and 0 ne}bdef
+/PSHADE{
+STD_SCREEN
+100 div dup /PatternShade exch def 
+/AD_NonSepPat true def	
+setgray <01> /PCurPat local 
+} def
+/BK { /AD_NonSepPat true def Black setgray } bdef			
+/WT { /AD_NonSepPat true def White setgray } bdef			
+/PBLACK /BK load def					
+/PWHITE /WT load def					
+/PREGISCOLOR
+{	
+pop AD_NonSepPat
+{ pop currentgray}{AldusTint mul 1 exch sub}ifelse 
+setseparationgray pop pop pop
+} bdef
+/PUSETHISPATTERN {
+dup PCurPat eq {pop}{ PPATTERN } ifelse
+PatternShade
+/AD_NonSepPat true def 	
+setgray /VerifyUsedPattern false def
+} bdef
+/PUSEPATTERN {
+VerifyUsedPattern
+{DeclaredPattern PCurPat ne {DeclaredPattern PPATTERN} if
+} if
+PatternShade setgray
+/VerifyUsedPattern false def
+} bdef
+/PDECLAREPATTERN {
+/DeclaredPattern exch def
+/VerifyUsedPattern true def
+/AD_NonSepPat true def 	
+} bdef
+/PatWidth 1 const
+/PatSide 8 const
+/PFreq 300 32 div const
+/PPATTERN{/PCurPat local
+/AD_NonSepPat true def	
+/VerifyUsedPattern false def
+0 /Onbits local 0 /Offbits local
+AD_Invert {{1 exch sub} settransfer} {{} settransfer} ifelse 
+PFreq PerCentChg pop dup 0.96 eq
+{pop}{div}ifelse 
+0 
+{
+1 1 addPoint 2 divPoint PatSide mulPoint
+cvi exch cvi exch bitison AD_Invert xor
+{/Onbits incr 1}
+{/Offbits incr 0}ifelse
+}
+setscreen
+Offbits dup Onbits add div AD_Invert {1 exch sub} if SetPattern
+/AD_StdScreen false assign}def
+/vertLines{pop dup mul -2 mul 1 add}bdef
+/sPat
+{			
+AD_Invert {{1 exch sub} settransfer} {{} settransfer} ifelse 
+setscreen setgray
+}def
+/PALDUSSHADE
+{
+<11> /PCurPat local
+/AD_NonSepPat true def 	
+/AD_StdScreen false assign
+Wide eq
+{ 0.774 20 45 {vertLines} sPat }
+{ 0.643 30 45 {vertLines} sPat }
+ifelse
+} bdef
+/PHAIRWIDTH
+{
+HairWidth setlinewidth /isHairline true def
+} bdef
+/LW {				
+LineScale mul deviceRound /LineHeight exch def
+LineScale mul deviceRound dup /LineWidth exch def
+setlinewidth
+/isHairline false def
+}bdef
+/PLNWIDTH /LW load def		
+/PLNSCALE{div /LineScale exch def} bdef
+/roundCoord
+{
+0.5 add round 0.5 sub
+} bdef
+/roundPoint
+{
+transform
+round exch round exch
+itransform
+} bdef
+/adjCoord {
+dup
+1 AD_DeviceScale div gt { deviceRound 2 div } { pop .5 AD_DeviceScale div } ifelse
+} bdef
+/pULAdj{ roundPoint currentlinewidth adjCoord LineHeight adjCoord addPoint }bdef
+/pLRAdj{ roundPoint currentlinewidth adjCoord LineHeight adjCoord subPoint }bdef
+/QD_LINE
+{
+/qd_save save def
+/y2 exch def
+/x2 exch def
+/y1 exch def
+/x1 exch def
+x1 x2 gt
+{
+x1 y1 x2 y2
+/y1 exch def
+/x1 exch def
+/y2 exch def
+/x2 exch def
+} if
+newpath
+y1 y2 gt
+{
+x1 y1 moveto
+x2 y2 lineto
+x2 LineWidth add
+dup
+y2 lineto
+y2 LineHeight add lineto
+x1 LineWidth add
+y1 LineHeight add lineto
+x1 y1 LineHeight add lineto
+x1 y1 lineto
+}
+{
+x1 y1 moveto
+x1 LineWidth add y1 lineto
+x2 LineWidth add
+dup y2 lineto
+y2 LineHeight add lineto
+x2 y2 LineHeight add lineto
+x1 y1 LineHeight add lineto
+x1 y1 lineto
+} ifelse
+closepath eofill
+qd_save restore	
+} bdef
+/PLINETO
+{
+PictPostScript 
+{
+moveto lineto
+}
+{ 
+/y2 exch def /x2 exch def /y1 exch def /x1 exch def
+currentlinecap ButtCap setlinecap
+newpath
+x1 x2 eq y1 y2 eq and
+{
+LineWidth 1 le LineHeight 1 le and
+{ x1 y1 moveto } 
+{ x1 y1 
+x1 LineWidth add y1 LineHeight add
+boxPath fill}
+ifelse
+}
+{ y1 y2 eq 			
+{ 
+LineWidth x1 x2 lt 
+{ x2 add /x2 exch def }
+{ x1 add /x1 exch def }
+ifelse
+LineHeight setlinewidth 
+x1 y1 LineHeight 2 div add roundPoint moveto
+x2 y2 LineHeight 2 div add roundPoint lineto
+mayStroke 
+}
+{ x1 x2 eq 			
+{ 
+LineHeight y1 y2 lt 
+{ y2 add /y2 exch def }
+{ y1 add /y1 exch def }
+ifelse
+x1 LineWidth 2 div add y1 roundPoint moveto
+x2 LineWidth 2 div add y2 roundPoint lineto
+mayStroke
+}
+{				
+x1 y1 pULAdj moveto x2 y2 pULAdj lineto mayStroke
+}
+ifelse 
+}	
+ifelse
+}
+ifelse
+setlinecap			
+}
+ifelse
+}bdef
+/HairRect
+{
+save /here exch def
+/y2 exch def /x2 exch def 
+/y1 exch def /x1 exch def
+PHAIRWIDTH newpath
+x1 x2 sub abs y1 y2 sub abs lt
+{ x1 x2 add 2 div dup y1 roundPoint moveto y2 roundPoint lineto stroke}
+{ y1 y2 add 2 div dup x1 exch roundPoint moveto x2 exch roundPoint lineto stroke}
+ifelse
+here restore
+} bdef 
+/PHAIRLINE
+{
+count 4 gt
+{ 
+newpath PHAIRWIDTH
+addPoint 2 divPoint roundPoint moveto 
+addPoint 2 divPoint roundPoint lineto pop pop
+stroke
+}
+{ HairRect }
+ifelse
+} bdef
+/PHANGLINE
+{
+roundPoint /yb exch def /xr exch def 
+roundPoint /yt exch def /xl exch def 
+deviceRound /delta exch def 
+{ {yt delta sub /yt exch def} {yb delta add /yb exch def} ifelse } 
+{ {xl delta sub /xl exch def} {xr delta add /xr exch def} ifelse } 
+ifelse
+newpath 
+1 AD_DeviceScale div 2 div dup dupPoint 
+xl yt addPoint exchPoint
+xr yb exchPoint subPoint boxPath fill
+} bdef
+/PCURVETO
+{
+curveto
+} bdef
+/PMOVETO
+{
+moveto
+} bdef
+/PRECT{newpath pLRAdj exchPoint pULAdj exchPoint boxPath}bdef
+/PRRECT { pLRAdj /Botts locPoint pULAdj /Tops locPoint 
+currentlinewidth dup subPoint /Diams locPoint 
+newpath SaveMatrix currentmatrix pop
+Botts Tops subPoint /Sides locPoint
+Sides pop abs Diams pop ge{Diams}{Sides}ifelse pop
+Sides exch pop abs Diams exch pop ge{Diams}{Sides}ifelse exch pop 
+/Diams locPoint
+Diams 2 div /YRad local
+0 gt
+{Diams exch pop	
+0 eq				
+{1}
+{Diams div}
+ifelse
+}
+{1}ifelse 1 /PRRscale locPoint
+Tops translate PRRscale scale 0 0 Sides PRRscale pointDpoint
+Diams 0 gt exch 0 gt and{YRad rBoxPath}{boxPath}ifelse
+SaveMatrix setmatrix}bdef
+/POVAL{newpath SaveMatrix currentmatrix pop
+0 359 false pArc closepath
+SaveMatrix setmatrix}bdef
+/PARC{ newpath SaveMatrix currentmatrix pop
+/DoingArc true assign
+false pArc	
+SaveMatrix setmatrix }bdef
+/PWEDGE{newpath SaveMatrix currentmatrix pop
+/DoingWedge true assign
+true pArc closepath
+SaveMatrix setmatrix }bdef
+/modAdj{
+dup 360 gt{360 sub}if
+dup 0 lt{360 add}if}bdef
+/pArc{/Fill local
+/ArcAng local /BegAng local
+pLRAdj /PLR locPoint
+pULAdj /PUL locPoint
+360 BegAng ArcAng add sub 90 add modAdj /StartAng local
+StartAng ArcAng add /EndAng local
+PLR PUL subPoint 2 divPoint /Rad locPoint
+PUL Rad addPoint translate
+Rad neg scale
+Fill{0 0 moveto}if
+0 0 1 StartAng EndAng
+dupPoint eq
+{pop pop 0 359 arc closepath}
+{ArcAng 0 lt
+{arcn}{arc}ifelse
+}
+ifelse
+}bdef
+/PBEGPOLY{
+newpath pULAdj moveto
+}bdef
+/PBEGSMOOTHPOLY {
+newpath
+} bdef
+/PPOLYPOINT {
+pULAdj lineto
+} bdef 
+/PENDPOLY{
+/Closed local
+Closed{closepath}if
+}bdef
+/PENDSMOOTHPOLY {
+PENDPOLY
+} bdef
+/PBEGRGN{mark}bdef
+/PREGION{PRECT cleartomark}bdef
+/PTXBEG {/PTSave1 save const} bdef
+/PROTATE {
+currentdict /PRotateSave known not
+{save /PRotateSave exch def} if
+3 1 roll dupPoint neg exch neg exch 5 2 roll 
+translate rotate translate
+} bdef
+/PHFLIP {
+currentdict /PRotateSave known not
+{save /PRotateSave exch def} if
+dupPoint neg exch neg exch 4 2 roll 
+translate -1  1 scale translate
+} bdef
+/PVFLIP {
+currentdict /PRotateSave known not
+{save /PRotateSave exch def} if
+dupPoint neg exch neg exch 4 2 roll 
+translate  1 -1 scale translate 
+} bdef
+/PROTATE_END
+{
+PRotateSave restore
+} bdef
+/PSCALETEXT {
+AD_PointsToUCS mul div /Xscale exch def 
+AD_PointsToUCS mul div /Yscale exch def
+currentfont [ Xscale 0 0 Yscale 0 0 ] makefont setfont
+/AD_fontscaleX AD_fontscaleX Xscale mul def
+/AD_fontscale AD_fontscale Yscale mul def
+} bdef
+/PSTBEG {
+userdict /md known not 
+{ userdict begin /md 0 def end } if
+PBLACK /PictPostScript true def
+} bdef
+/PSTEND {
+/PictPostScript false def
+} bdef
+/mayStroke{				
+currentlinewidth 0 gt isHairline or
+{
+gsave
+/s_matrix null def
+/stroke_xform false def
+DoingWedge  {MiterJoin setlinejoin} if 
+currentlinewidth  1 AD_DeviceScale div sub setlinewidth
+LineWidth LineHeight ne
+{
+/s_matrix matrix currentmatrix def
+1 LineHeight LineWidth div scale
+/stroke_xform true def
+} if
+stroke		
+stroke_xform {s_matrix setmatrix} if
+grestore
+} if
+/DoingWedge false assign
+} bdef
+/RESET_PAT_SEP
+{
+/AD_NonSepPat false def
+} bdef
+/PFRAME{mayStroke RESET_PAT_SEP}bdef
+/PPAINT
+{
+mayStroke gsave eofill grestore RESET_PAT_SEP
+}bdef 
+/PERASE
+{
+mayStroke gsave eofill grestore RESET_PAT_SEP
+}bdef 
+/PFILL 
+{
+mayStroke gsave eofill grestore RESET_PAT_SEP
+}bdef 
+/PTINT
+{
+100 exch sub 100 div /AldusTint exch def
+} bdef
+/PRESETTINT
+{
+AldusTint 1 eq not 
+{/AldusTint 1 def
+}if
+} bdef	
+/PHORZSHADE	
+{
+0 eq	
+{/widehorz}{/narrowhorz
+}ifelse findfont
+_OpaquePatternfill
+} bdef
+/PVERTSHADE	
+{
+0 eq	
+{/widevert}{/narrowvert
+}ifelse findfont
+_OpaquePatternfill
+} bdef
+/PHATCHSHADE	
+{
+0 eq	
+{/widehatch}{/narrowhatch
+}ifelse	findfont
+_OpaquePatternfill
+} bdef
+/PDIAGSHADE	
+{
+0 eq	
+{/widediag}{/narrowdiag
+}ifelse findfont
+_OpaquePatternfill
+} bdef
+/_SetCoords
+{
+/y2 local /x2 local /y1 local /x1 local
+} bdef
+/_DefinePattern { 
+7 dict begin
+/FontDict 9 dict def
+FontDict begin
+/cache exch def
+/key exch def
+/proc exch cvx def
+/mtx exch matrix invertmatrix def
+/height exch def
+/width exch def
+/ctm matrix currentmatrix def
+/ptm matrix identmatrix def
+/str
+(12345678901234567890123456789012)
+def
+end
+/FontBBox [ 
+0 0 FontDict /width get
+FontDict /height get
+] def
+/FontMatrix FontDict /mtx get def
+/Encoding StandardEncoding def
+/FontType 3 def
+/BuildChar { 
+pop begin
+FontDict begin
+width 0 cache { 
+0 0 width height setcachedevice
+}{ 
+setcharwidth
+} ifelse
+0 0 moveto width 0 lineto
+width height lineto 0 height lineto
+closepath clip newpath
+gsave proc grestore
+end end
+} def
+FontDict /key get currentdict definefont
+end
+} bind def
+/_Patternpath { 
+dup type /dicttype eq { 
+begin FontDict /ctm get setmatrix
+}{ 
+exch begin FontDict /ctm get setmatrix
+concat
+} ifelse
+currentdict setfont
+FontDict begin
+FontMatrix concat
+width 0 dtransform
+round width div exch round width div exch
+0 height dtransform
+round height div exch
+round height div exch
+0 0 transform round exch round exch
+ptm astore setmatrix
+pathbbox
+height div ceiling height mul 4 1 roll
+width div ceiling width mul 4 1 roll
+height div floor height mul 4 1 roll
+width div floor width mul 4 1 roll
+2 index sub height div ceiling cvi exch
+3 index sub width div ceiling cvi exch
+4 2 roll moveto
+FontMatrix ptm invertmatrix pop
+{ 
+gsave
+ptm concat
+dup str length idiv { 
+str show
+} repeat
+dup str length mod str exch
+0 exch getinterval show
+grestore
+0 height rmoveto
+} repeat
+pop
+end end
+} bind def
+/_Patternfill { 
+gsave
+clip _Patternpath
+grestore
+newpath
+} bind def
+/_OpaquePatternfill { 
+gsave
+0 0 0 0 setcmykcolor
+fill
+grestore
+_Patternfill
+} bind def
+/_DefinePatterns
+{
+/AD_PatternLW .009375 AD_Resolution mul def
+/narrowdiagunit .046666 AD_Resolution mul def
+narrowdiagunit narrowdiagunit [1 0 0 1 0 0]
+{				
+SquareCap setlinecap
+0 narrowdiagunit 2 div moveto narrowdiagunit 2 div 0 lineto
+narrowdiagunit 2 div narrowdiagunit moveto 
+narrowdiagunit narrowdiagunit 2 div lineto 
+AD_PatternLW setlinewidth stroke
+} bind
+/narrowdiag true _DefinePattern pop
+/widediagunit .073333 AD_Resolution mul def
+widediagunit widediagunit [1 0 0 1 0 0]
+{				SquareCap setlinecap
+0 widediagunit 2 div moveto widediagunit 2 div 0 lineto
+widediagunit 2 div widediagunit moveto 
+widediagunit widediagunit 2 div lineto 
+AD_PatternLW setlinewidth stroke
+} bind
+/widediag true _DefinePattern pop
+/narrowhorzunit .053333 AD_Resolution mul def
+narrowhorzunit narrowhorzunit [1 0 0 1 0 0]
+{				
+SquareCap setlinecap
+0 narrowhorzunit 2 div moveto
+narrowhorzunit narrowhorzunit 2 div lineto
+AD_PatternLW setlinewidth stroke
+} bind
+/narrowhorz true _DefinePattern pop
+/widehorzunit .106666 AD_Resolution mul def
+widehorzunit widehorzunit [1 0 0 1 0 0]
+{
+SquareCap setlinecap
+0 widehorzunit 2 div moveto
+widehorzunit widehorzunit 2 div lineto
+AD_PatternLW setlinewidth stroke
+} bind
+/widehorz true _DefinePattern pop
+/narrowvertunit .053333 AD_Resolution mul def
+narrowvertunit narrowvertunit [1 0 0 1 0 0]
+{
+SquareCap setlinecap
+narrowvertunit 2 div 0 moveto 
+narrowvertunit 2 div narrowvertunit lineto
+AD_PatternLW setlinewidth stroke
+} bind
+/narrowvert true _DefinePattern pop
+/widevertunit .106666 AD_Resolution mul def
+widevertunit widevertunit [1 0 0 1 0 0]
+{
+SquareCap setlinecap
+widevertunit 2 div 0 moveto 
+widevertunit 2 div widevertunit lineto
+AD_PatternLW setlinewidth stroke
+} bind
+/widevert true _DefinePattern pop
+/narrowhatchunit .053333 AD_Resolution mul def
+narrowhatchunit narrowhatchunit [1 0 0 1 0 0]
+{
+SquareCap setlinecap
+narrowhatchunit 2 div 0 moveto 
+narrowhatchunit 2 div narrowhatchunit lineto
+0 narrowhatchunit 2 div moveto
+narrowhatchunit narrowhatchunit 2 div lineto
+AD_PatternLW setlinewidth stroke
+} bind
+/narrowhatch true _DefinePattern pop
+/widehatchunit .106666 AD_Resolution mul def
+widehatchunit widehatchunit [1 0 0 1 0 0]
+{
+SquareCap setlinecap
+widehatchunit 2 div 0 moveto 
+widehatchunit 2 div widehatchunit lineto
+0 widehatchunit 2 div moveto
+widehatchunit widehatchunit 2 div lineto
+AD_PatternLW setlinewidth stroke
+} bind
+/widehatch true _DefinePattern pop
+}
+version (23.) anchorsearch
+{pop pop def}{pop bdef} ifelse 
+systemdict /currentpacking known
+{AD_OldPacking setpacking} if
+/AldusDone AldusVersion def			
+end		
+%%EndProcSet 
+%PrepPatch
+AldusDict2 begin
+/COL_ARAY 6 array def
+/SET_C {counttomark 6 eq {COL_ARAY astore} if counttomark 1 add -1 roll pop
+ /AD_textcolor exch def false SETTEXTCUTOUT} bind def
+MacEncoding dup
+168 /registered put dup
+169 /copyright put
+170 /trademark put
+/PBEGIN load aload length array cvx astore /PBEGIN exch def
+/PEND load aload length array cvx astore /PEND exch def
+/PBEGIN dup load
+dup 1 /pop load put
+dup 3 /exec load put
+def
+/PEND dup load
+dup 2 /pop load put
+dup 4 /exec load put
+def
+/AD_OutlineWidth 12 def
+end
+%%EndProlog 
+AldusDict2  begin
+%%BeginSetup 
+/#copies 1 def
+3300 2550 false false false BEGJOB
+300 SETRES
+1275 1650 translate
+25000 S_WORKING
+%%EndSetup 
+%%Page: 1 1
+%%PageProcessColors: 
+%%PageCustomColors: (Black)
+AldusDict2 /SUsv known not {AD_SomethingOnPage SUSAVE} if
+BEGPAGE
+ -1275.0 -1650.0 1275.0 1650.0 true PBEGIN
+ 0.0 0.0  LW  false true 8.0 -900.0 -1260.0 975.0 -1260.0 0.00 0.00 0.00 1.00 (Black) PCOLOR PHANGLINE
+ PEND
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+false S_LOADFONT
+(Helvetica-Bold) FTRECODE
+SUSAVE
+/|______Helvetica-Bold 600 100 mul 1000 div 4160 16  0.00 0.00 0.00 1.00 (Black) false SET
+-226 -722 0.0000 -0.0290
+(TIFF) 4 0 527 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+false S_LOADFONT
+(Helvetica) FTRECODE
+SUSAVE
+/|______Helvetica 240 100 mul 1000 div 1660 16  0.00 0.00 0.00 1.00 (Black) false SET
+-237 -535 -0.0978 0.0000
+(Revision 6.0) 12 1 550 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 140 100 mul 1000 div 980 16  0.00 0.00 0.00 1.00 (Black) false SET
+-240 -396 0.0109 0.0000
+(Final — June 3, 1992) 20 4 554 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 120 100 mul 1000 div 840 16  0.00 0.00 0.00 1.00 (Black) false SET
+319 -858 0.0000 0.0000
+(\252) 1 0 50 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+false S_LOADFONT
+(Times-Roman) FTRECODE
+SUSAVE
+/|______Times-Roman 120 100 mul 1000 div 880 16  0.00 0.00 0.00 0.00 (Paper) true SET
+-772 558 -1.8743 -0.4999
+(Author/Editor/Arbitrator: Steve Carlsen, Principal Engineer, Aldus Corporation) 78 6 1544 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-Bold 90 100 mul 1000 div 620 16  0.00 0.00 0.00 1.00 (Black) false SET
+-900 733 -0.0257 0.0000
+(Aldus Developers Desk) 21 2 417 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 90 100 mul 1000 div 620 16  0.00 0.00 0.00 1.00 (Black) false SET
+-900 788 -0.0433 0.0000
+(Aldus Corporation) 17 1 300 OUT
+-900 833 0.0285 0.0000
+(411 First Avenue South) 22 3 392 OUT
+-900 877 0.0224 0.0000
+(Seattle, WA  98104-2871) 23 3 419 OUT
+-900 931 0.0000 -0.0025
+(CompuServe:) 11 0 229 OUT
+-630 931 0.0138 0.0000
+(GO ALDSVC, Message Section #10) 30 4 600 OUT
+-900 977 0.0000 -0.0039
+(Applelink:) 10 0 162 OUT
+-630 977 -0.0396 0.0000
+(Aldus Developers Icon) 21 2 375 OUT
+ -1275.0 -1650.0 1275.0 1650.0 true PBEGIN
+ 0.0 0.0  LW  false true 8.0 -912.0 1225.0 975.0 1225.0 0.00 0.00 0.00 1.00 (Black) PCOLOR PHANGLINE
+ PEND
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-Bold 90 100 mul 1000 div 620 16  0.00 0.00 0.00 1.00 (Black) false SET
+-900 1071 -1.5690 -0.4166
+(For a copy of the TIFF 6.0 specification, call \050206\051 628-6593.) 62 10 1013 OUT
+-900 1146 -1.5559 -0.4166
+(If you have questions about the contents of this specification, see page 8.) 75 12 1265 OUT
+MUST_PRINT_PAGE
+ENDPAGE
+AldusDict2 /SUsv known { SUsv restore } if
+AldusDict2 /AD_TopOfFonts known{ AD_TopOfFonts restore } if
+%%PageTrailer 
+%%PageFonts: Helvetica
+%%+ Helvetica-Bold
+%%+ Times-Roman
+%%Page: 2 2
+%%PageProcessColors: 
+%%PageCustomColors: (Black)
+AldusDict2 /SUsv known not {AD_SomethingOnPage SUSAVE} if
+BEGPAGE
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 80 100 mul 1000 div 560 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -1470 0.0253 0.0000
+(TIFF 6.0 Specification) 22 2 324 OUT
+677 -1470 0.0464 0.0000
+(Final—June 3, 1992) 18 2 298 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 80 100 mul 1000 div 560 16  0.00 0.00 0.00 1.00 (Black) false SET
+-39 1503 0.0000 0.0000
+(2) 1 0 19 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+false S_LOADFONT
+(Helvetica-BoldOblique) FTRECODE
+SUSAVE
+/|______Helvetica-BoldOblique 130 100 mul 1000 div 900 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 -1258 0.0000 -0.2964
+(Copyright) 9 0 253 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 -1180 -1.5676 -0.4165
+(\251 1986-1988, 1992 Aldus Corporation. Permission to copy without fee all or part) 79 12 1309 OUT
+-350 -1130 -1.5688 -0.4165
+(of this material is granted provided that the copies are not made or distributed for) 84 14 1297 OUT
+-350 -1080 -1.5691 -0.4165
+(direct commercial advantage and the Aldus copyright notice appears. If the major-) 81 11 1324 OUT
+-350 -1030 -1.5694 -0.4165
+(ity of the document is copied or redistributed, it must be distributed verbatim,) 80 12 1242 OUT
+-350 -980 -1.5640 -0.4165
+(without repagination or reformatting. To copy otherwise requires specific permis-) 81 9 1315 OUT
+-350 -930 -1.5366 -0.4165
+(sion from the Aldus Corporation.) 32 4 535 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 130 100 mul 1000 div 900 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 -771 -0.7102 -0.3008
+(Licenses and T) 14 2 383 OUT
+33 -771 -0.7102 -0.3008
+(rademarks) 9 0 272 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 -692 -1.5570 -0.4165
+(Aldus and PageMaker are registered trademarks and TIFF is a trademark of Aldus) 78 12 1319 OUT
+-350 -642 -1.5516 -0.4165
+(Corporation. Apple and Macintosh are registered trademarks of Apple Computer,) 77 9 1311 OUT
+-350 -592 -1.5559 -0.4165
+(Inc. MS-DOS is a registered trademark of Microsoft Corporation. UNIX is a) 73 11 1229 OUT
+-350 -542 -1.5671 -0.4165
+(trademark of Bell Laboratories. CompuServe is a registered trademark of) 71 9 1176 OUT
+-350 -492 -1.5565 -0.4165
+(CompuServe Inc. PostScript is a registered trademark of Adobe Systems Inc. and) 78 11 1306 OUT
+-350 -442 -1.5587 -0.4165
+(all references to PostScript in this document are references to either the PostScript) 85 12 1316 OUT
+-350 -392 -1.5564 -0.4165
+(interpreter or language. Kodak and PhotoYCC are trademarks of Eastman Kodak) 75 10 1306 OUT
+-350 -342 0.0000 -0.4087
+(Company.) 8 0 170 OUT
+-350 -267 -1.5640 -0.4165
+(Rather than put a trademark symbol in every occurrence of other trademarked) 75 11 1249 OUT
+-350 -217 -1.5604 -0.4165
+(names, we state that we are using the names only in an editorial fashion, and to the) 84 16 1320 OUT
+-350 -167 -1.5712 -0.4165
+(benefit of the trademark owner, with no intention of infringement of the trade-) 79 12 1255 OUT
+-350 -117 0.0000 -0.4114
+(mark.) 5 0 94 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 130 100 mul 1000 div 900 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 42 0.0000 -0.3061
+(Acknowledgments) 15 0 474 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 121 -1.5669 -0.4165
+(This specification is the result of much hard work by many people.) 66 11 1071 OUT
+-350 196 -1.5625 -0.4165
+(Some of the sections in Part 2 were written by a number of outside contributors:) 80 14 1280 OUT
+-225 271 -1.5626 -0.4165
+(Ed Beeman, Hewlett Packard) 26 3 475 OUT
+-225 346 -1.5384 -0.4165
+(Nancy Cam, Silicon Graphics) 27 3 482 OUT
+-225 421 -1.5260 -0.4165
+(Dennis Hamilton, Xerox) 22 2 399 OUT
+-225 496 -1.5207 -0.4165
+(Eric Hamilton, C-Cube) 21 2 376 OUT
+-225 571 -1.5935 -0.4165
+(Sam Leffler, Silicon Graphics) 29 3 483 OUT
+-225 646 -1.5482 -0.4165
+(Chris and Dan Sears) 19 3 329 OUT
+-350 721 -1.5679 -0.4165
+(Other primary reviewers and TAC meeting participants include representatives) 76 8 1273 OUT
+-350 771 -1.5619 -0.4165
+(from Apple, Camex, Crosfield, Digital Optics Limited, Frame, IBM, Interleaf,) 76 9 1260 OUT
+-350 821 -1.5560 -0.4165
+(Island Graphics, Kodak, Linotype-Hell, Quark, Sun Microsystems, Time Arts,) 74 8 1265 OUT
+-350 871 -1.5572 -0.4165
+(US West, and Wang. Many thanks to all for lending their time and talents to this) 80 15 1285 OUT
+-350 921 0.0000 -0.4166
+(effort.) 7 0 100 OUT
+-350 996 -1.5541 -0.4165
+(No document this large can completely satisfy everyone, but we have all worked) 78 12 1295 OUT
+-350 1046 -1.5603 -0.4165
+(hard to strike an effective balance between power and simplicity, between formal-) 81 11 1319 OUT
+-350 1096 -1.5683 -0.4165
+(ity and approachability, and between flexibility and constraints.) 65 7 1023 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 130 100 mul 1000 div 900 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 1255 -0.7491 -0.3008
+(Production Notes) 16 1 446 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 1333 -1.5681 -0.4165
+(This document was created electronically using Aldus PageMaker) 62 7 1066 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 58 100 mul 1000 div 420 16  0.00 0.00 0.00 1.00 (Black) false SET
+716 1319 0.0000 -0.2416
+(\250) 1 0 18 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+734 1333 -1.5681 -0.4165
+( 4.2.) 5 1 70 OUT
+MUST_PRINT_PAGE
+ENDPAGE
+AldusDict2 /SUsv known { SUsv restore } if
+AldusDict2 /AD_TopOfFonts known{ AD_TopOfFonts restore } if
+%%PageTrailer 
+%%PageFonts: 
+%%Page: 3 3
+%%PageProcessColors: 
+%%PageCustomColors: (Black)
+AldusDict2 /SUsv known not {AD_SomethingOnPage SUSAVE} if
+BEGPAGE
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 80 100 mul 1000 div 560 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -1470 0.0253 0.0000
+(TIFF 6.0 Specification) 22 2 324 OUT
+677 -1470 0.0464 0.0000
+(Final—June 3, 1992) 18 2 298 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 80 100 mul 1000 div 560 16  0.00 0.00 0.00 1.00 (Black) false SET
+6 1505 0.0000 0.0000
+(3) 1 0 19 OUT
+ -1275.0 -1650.0 1275.0 1650.0 true PBEGIN
+ 0.0 0.0  LW  true true 2.0 -975.0 -1201.0 975.0 -1201.0 0.00 0.00 0.00 1.00 (Black) PCOLOR PHANGLINE
+ PEND
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 200 100 mul 1000 div 1380 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -1239 0.0000 0.0081
+(Contents) 8 0 361 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-Bold 120 100 mul 1000 div 840 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -1095 0.0000 -0.0085
+(Introduction) 12 0 291 OUT
+-668 -1095 0.0000 0.0000
+(....................................................................................................................) 116 0 1611 OUT
+947 -1095 0.0000 0.0000
+(4) 1 0 28 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 100 100 mul 1000 div 700 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 -1029 0.0000 -0.0043
+(About this Specification) 24 2 477 OUT
+138 -1029 0.0000 0.0000
+(......................................................................) 70 0 810 OUT
+952 -1029 0.0000 0.0000
+(4) 1 0 23 OUT
+-350 -963 0.0000 -0.0068
+(Revision Notes) 14 1 301 OUT
+-36 -963 0.0000 0.0000
+(.....................................................................................) 85 0 984 OUT
+952 -963 0.0000 0.0000
+(6) 1 0 23 OUT
+-350 -896 0.0000 -0.0051
+(TIFF Administration) 19 1 393 OUT
+57 -896 0.0000 0.0000
+(.............................................................................) 77 0 891 OUT
+952 -896 0.0000 0.0000
+(8) 1 0 23 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+false S_LOADFONT
+(Helvetica-Oblique) FTRECODE
+SUSAVE
+/|______Helvetica-Oblique 100 100 mul 1000 div 700 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 -842 -0.0022 0.0000
+(Information and Support) 23 2 447 OUT
+103 -842 0.0000 0.0000
+(.........................................................................) 73 0 845 OUT
+952 -842 0.0000 0.0000
+(8) 1 0 23 OUT
+-350 -788 -0.0102 0.0000
+(Private Fields and Values) 25 3 472 OUT
+126 -788 0.0000 0.0000
+(.......................................................................) 71 0 822 OUT
+952 -788 0.0000 0.0000
+(8) 1 0 23 OUT
+-350 -733 0.0032 0.0000
+(Submitting a Proposal) 21 2 407 OUT
+68 -733 0.0000 0.0000
+(............................................................................) 76 0 880 OUT
+952 -733 0.0000 0.0000
+(9) 1 0 23 OUT
+-350 -679 0.0313 0.0000
+(The TIFF Advisory Committee) 27 3 556 OUT
+219 -679 0.0000 0.0000
+(...............................................................) 63 0 729 OUT
+952 -679 0.0000 0.0000
+(9) 1 0 23 OUT
+-350 -625 -0.0355 0.0000
+(Other TIFF Extensions) 21 2 419 OUT
+80 -625 0.0000 0.0000
+(...........................................................................) 75 0 868 OUT
+952 -625 0.0000 0.0000
+(9) 1 0 23 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-Bold 120 100 mul 1000 div 840 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -547 -0.0285 0.0000
+(Part 1: Baseline TIFF) 21 3 494 OUT
+-474 -547 0.0000 0.0000
+(....................................................................................................) 100 0 1389 OUT
+919 -547 0.0000 0.0321
+(11) 2 0 56 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 100 100 mul 1000 div 700 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 -482 0.0180 0.0000
+(Section 1: Notation) 19 2 380 OUT
+45 -482 0.0000 0.0000
+(............................................................................) 76 0 880 OUT
+929 -482 0.0000 -0.0776
+(12) 2 0 46 OUT
+-350 -415 0.0000 -0.0043
+(Section 2: TIFF Structure) 25 3 495 OUT
+149 -415 0.0000 0.0000
+(...................................................................) 67 0 776 OUT
+929 -415 0.0000 -0.0776
+(13) 2 0 46 OUT
+-350 -348 0.0000 -0.0030
+(Section 3: Bilevel Images) 25 3 500 OUT
+161 -348 0.0000 0.0000
+(..................................................................) 66 0 764 OUT
+929 -348 0.0000 -0.0776
+(17) 2 0 46 OUT
+-350 -282 0.0198 0.0000
+(Section 4: Grayscale Images) 27 3 565 OUT
+230 -282 0.0000 0.0000
+(............................................................) 60 0 695 OUT
+929 -282 0.0000 -0.0776
+(22) 2 0 46 OUT
+-350 -215 0.0173 0.0000
+(Section 5: Palette-color Images) 31 3 618 OUT
+277 -215 0.0000 0.0000
+(........................................................) 56 0 648 OUT
+929 -215 0.0000 -0.0776
+(23) 2 0 46 OUT
+-350 -148 0.0110 0.0000
+(Section 6: RGB Full Color Images) 32 5 664 OUT
+323 -148 0.0000 0.0000
+(....................................................) 52 0 602 OUT
+929 -148 0.0000 -0.0776
+(24) 2 0 46 OUT
+-350 -82 0.0000 -0.0001
+(Section 7: Additional Baseline TIFF Requirements) 48 5 986 OUT
+647 -82 0.0000 0.0000
+(........................) 24 0 278 OUT
+929 -82 0.0000 -0.0776
+(26) 2 0 46 OUT
+-350 -15 0.0000 -0.0015
+(Section 8: Baseline Field Reference Guide) 41 5 833 OUT
+497 -15 0.0000 0.0000
+(.....................................) 37 0 428 OUT
+929 -15 0.0000 -0.0776
+(28) 2 0 46 OUT
+-350 52 0.0000 -0.0001
+(Section 9: PackBits Compression) 31 3 664 OUT
+323 52 0.0000 0.0000
+(....................................................) 52 0 602 OUT
+929 52 0.0000 -0.0776
+(42) 2 0 46 OUT
+-350 118 0.0084 0.0000
+(Section 10: Modified Huffman Compression) 40 4 863 OUT
+520 118 0.0000 0.0000
+(...................................) 35 0 405 OUT
+929 118 0.0000 -0.0776
+(43) 2 0 46 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-Bold 120 100 mul 1000 div 840 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 196 -0.0153 0.0000
+(Part 2:  TIFF Extensions) 24 4 569 OUT
+-391 196 0.0000 0.0000
+(..............................................................................................) 94 0 1306 OUT
+919 196 0.0000 0.0321
+(48) 2 0 56 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 100 100 mul 1000 div 700 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 262 0.0070 0.0000
+(Section 11: CCITT Bilevel Encodings) 35 4 727 OUT
+392 262 0.0000 0.0000
+(..............................................) 46 0 533 OUT
+929 262 0.0000 -0.0776
+(49) 2 0 46 OUT
+-350 328 0.0000 -0.0003
+(Section 12: Document Storage and Retrieval) 42 5 877 OUT
+531 328 0.0000 0.0000
+(..................................) 34 0 394 OUT
+929 328 0.0000 -0.0776
+(55) 2 0 46 OUT
+-350 395 0.0223 0.0000
+(Section 13: LZW Compression) 27 3 602 OUT
+265 395 0.0000 0.0000
+(.........................................................) 57 0 660 OUT
+929 395 0.0000 -0.0776
+(57) 2 0 46 OUT
+-350 462 0.0000 -0.0005
+(Section 14: Differencing Predictor) 34 3 671 OUT
+335 462 0.0000 0.0000
+(...................................................) 51 0 590 OUT
+929 462 0.0000 -0.0776
+(64) 2 0 46 OUT
+-350 528 0.0305 0.0000
+(Section 15: Tiled Images) 24 3 486 OUT
+149 528 0.0000 0.0000
+(...................................................................) 67 0 776 OUT
+929 528 0.0000 -0.0776
+(66) 2 0 46 OUT
+-350 595 0.0267 0.0000
+(Section 16: CMYK Images) 23 3 512 OUT
+173 595 0.0000 0.0000
+(.................................................................) 65 0 752 OUT
+929 595 0.0000 -0.0776
+(69) 2 0 46 OUT
+-350 662 0.0115 0.0000
+(Section 17: HalftoneHints) 25 2 505 OUT
+161 662 0.0000 0.0000
+(..................................................................) 66 0 764 OUT
+929 662 0.0000 -0.0776
+(72) 2 0 46 OUT
+-350 728 0.0003 0.0000
+(Section 18: Associated Alpha Handling) 37 4 773 OUT
+427 728 0.0000 0.0000
+(...........................................) 43 0 498 OUT
+929 728 0.0000 -0.0776
+(77) 2 0 46 OUT
+-350 795 0.0193 0.0000
+(Section 19: Data Sample Format) 30 4 637 OUT
+300 795 0.0000 0.0000
+(......................................................) 54 0 625 OUT
+929 795 0.0000 -0.0776
+(80) 2 0 46 OUT
+-350 862 0.0136 0.0000
+(Section 20: RGB Image Colorimetry) 33 4 704 OUT
+369 862 0.0000 0.0000
+(................................................) 48 0 556 OUT
+929 862 0.0000 -0.0776
+(82) 2 0 46 OUT
+-350 928 0.0000 -0.0000
+(Section 21: YC) 14 2 292 OUT
+-58 928 0.0000 -0.0000
+(b) 1 0 25 OUT
+-33 928 0.0000 -0.0000
+(C) 1 0 30 OUT
+-3 928 0.0000 -0.0000
+(r) 1 0 16 OUT
+13 928 0.0000 -0.0000
+( Images) 7 1 155 OUT
+184 928 0.0000 0.0000
+(................................................................) 64 0 741 OUT
+929 928 0.0000 -0.0776
+(89) 2 0 46 OUT
+-350 995 0.0000 -0.0009
+(Section 22: JPEG Compression) 28 3 623 OUT
+288 995 0.0000 0.0000
+(.......................................................) 55 0 637 OUT
+929 995 0.0000 -0.0776
+(95) 2 0 46 OUT
+-350 1062 0.0170 0.0000
+(Section 23: CIE L*a*b* Images) 29 4 593 OUT
+253 1062 0.0000 0.0000
+(........................................................) 56 0 648 OUT
+905 1062 0.0000 0.0458
+(110) 3 0 70 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-Bold 120 100 mul 1000 div 840 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 1139 -0.0036 0.0000
+(Part 3:  Appendices) 19 3 467 OUT
+-501 1139 0.0000 0.0000
+(....................................................................................................) 100 0 1389 OUT
+892 1139 0.0000 -0.0273
+(116) 3 0 83 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 100 100 mul 1000 div 700 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 1205 0.0000 -0.0008
+(Appendix A: TIFF Tags Sorted by Number) 38 6 826 OUT
+484 1205 0.0000 0.0000
+(....................................) 36 0 417 OUT
+905 1205 0.0000 0.0458
+(117) 3 0 70 OUT
+-350 1272 0.0000 -0.0010
+(Appendix B: Operating System Considerations) 43 4 928 OUT
+588 1272 0.0000 0.0000
+(...........................) 27 0 313 OUT
+905 1272 0.0000 0.0458
+(119) 3 0 70 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-Bold 120 100 mul 1000 div 840 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 1349 0.0000 0.0141
+(Index) 5 0 131 OUT
+-835 1349 0.0000 0.0000
+(............................................................................................................................) 124 0 1723 OUT
+892 1349 0.0000 -0.0273
+(120) 3 0 83 OUT
+MUST_PRINT_PAGE
+ENDPAGE
+AldusDict2 /SUsv known { SUsv restore } if
+AldusDict2 /AD_TopOfFonts known{ AD_TopOfFonts restore } if
+%%PageTrailer 
+%%PageFonts: 
+%%Page: 4 4
+%%PageProcessColors: 
+%%PageCustomColors: (Black)
+AldusDict2 /SUsv known not {AD_SomethingOnPage SUSAVE} if
+BEGPAGE
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 80 100 mul 1000 div 560 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -1470 0.0253 0.0000
+(TIFF 6.0 Specification) 22 2 324 OUT
+677 -1470 0.0464 0.0000
+(Final—June 3, 1992) 18 2 298 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 80 100 mul 1000 div 560 16  0.00 0.00 0.00 1.00 (Black) false SET
+-39 1503 0.0000 0.0000
+(4) 1 0 19 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-Bold 300 100 mul 1000 div 2080 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -1200 0.0000 0.0069
+(Introduction) 12 0 729 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-Bold 220 100 mul 1000 div 1520 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -908 -1.2945 -0.5090
+(About this Specification) 24 2 1035 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 -730 -1.5648 -0.4165
+(This document describes TIFF, a tag-based file format for storing and interchang-) 81 11 1312 OUT
+-350 -680 -1.5659 -0.4165
+(ing raster images.) 18 2 285 OUT
+ -1275.0 -1650.0 1275.0 1650.0 true PBEGIN
+ 0.0 0.0  LW  true true 2.0 -975.0 -491.0 975.0 -491.0 0.00 0.00 0.00 1.00 (Black) PCOLOR PHANGLINE
+ PEND
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 160 100 mul 1000 div 1120 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -516 0.0000 -0.3860
+(History) 7 0 227 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 -395 -1.5559 -0.4165
+(The first version of the TIFF specification was published by Aldus Corporation in) 81 12 1313 OUT
+-350 -345 -1.5607 -0.4165
+(the fall of 1986, after a series of meetings with various scanner manufacturers and) 83 13 1313 OUT
+-350 -295 -1.5735 -0.4165
+(software developers. It did not have a revision number but should have been la-) 79 13 1273 OUT
+-350 -245 -1.5706 -0.4165
+(beled Revision 3.0 since there were two major earlier draft releases.) 69 10 1087 OUT
+-350 -170 -1.5582 -0.4165
+(Revision 4.0 contained mostly minor enhancements and was released in April) 74 10 1251 OUT
+-350 -120 -1.5558 -0.4165
+(1987. Revision 5.0, released in October 1988, added support for palette color) 77 11 1237 OUT
+-350 -70 -1.5370 -0.4165
+(images and LZW compression.) 27 3 505 OUT
+ -1275.0 -1650.0 1275.0 1650.0 true PBEGIN
+ 0.0 0.0  LW  true true 2.0 -975.0 119.0 975.0 119.0 0.00 0.00 0.00 1.00 (Black) PCOLOR PHANGLINE
+ PEND
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 160 100 mul 1000 div 1120 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 94 0.0000 -0.3725
+(Scope) 5 0 199 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 215 -1.5669 -0.4165
+(TIFF describes image data that typically comes from scanners, frame grabbers,) 77 10 1269 OUT
+-350 265 -1.5403 -0.4165
+(and paint- and photo-retouching programs.) 41 4 691 OUT
+-350 340 -1.5688 -0.4165
+(TIFF is not a printer language or page description language. The purpose of TIFF) 80 13 1305 OUT
+-350 390 -1.5579 -0.4165
+(is to describe and store raster image data.) 43 7 659 OUT
+-350 465 -1.5776 -0.4165
+(A primary goal of TIFF is to provide a rich environment within which applica-) 77 13 1261 OUT
+-350 515 -1.5681 -0.4165
+(tions can exchange image data. This richness is required to take advantage of the) 81 13 1293 OUT
+-350 565 -1.5583 -0.4165
+(varying capabilities of scanners and other imaging devices.) 59 7 951 OUT
+-350 640 -1.5660 -0.4165
+(Though TIFF is a rich format, it can easily be used for simple scanners and appli-) 82 15 1301 OUT
+-350 690 -1.5627 -0.4165
+(cations as well because the number of required fields is small.) 63 10 992 OUT
+-350 765 -1.5634 -0.4165
+(TIFF will be enhanced on a continuing basis as new imaging needs arise. A high) 78 14 1289 OUT
+-350 815 -1.5704 -0.4165
+(priority has been given to structuring TIFF so that future enhancements can be) 78 12 1256 OUT
+-350 865 -1.5689 -0.4165
+(added without causing unnecessary hardship to developers.) 57 6 954 OUT
+MUST_PRINT_PAGE
+ENDPAGE
+AldusDict2 /SUsv known { SUsv restore } if
+AldusDict2 /AD_TopOfFonts known{ AD_TopOfFonts restore } if
+%%PageTrailer 
+%%PageFonts: 
+%%Page: 5 5
+%%PageProcessColors: 
+%%PageCustomColors: (Black)
+AldusDict2 /SUsv known not {AD_SomethingOnPage SUSAVE} if
+BEGPAGE
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 80 100 mul 1000 div 560 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -1470 0.0253 0.0000
+(TIFF 6.0 Specification) 22 2 324 OUT
+677 -1470 0.0464 0.0000
+(Final—June 3, 1992) 18 2 298 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 80 100 mul 1000 div 560 16  0.00 0.00 0.00 1.00 (Black) false SET
+6 1505 0.0000 0.0000
+(5) 1 0 19 OUT
+ -1275.0 -1650.0 1275.0 1650.0 true PBEGIN
+ 0.0 0.0  LW  true true 2.0 -975.0 -1228.0 975.0 -1228.0 0.00 0.00 0.00 1.00 (Black) PCOLOR PHANGLINE
+ PEND
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 160 100 mul 1000 div 1120 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -1253 0.0000 -0.3700
+(Features) 8 0 275 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 -1145 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -1145 -1.5563 -0.4165
+(TIFF is capable of describing bilevel, grayscale, palette-color, and full-color) 79 9 1226 OUT
+-300 -1095 -1.5552 -0.4165
+(image data in several color spaces.) 35 5 556 OUT
+-350 -1032 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -1032 -1.5619 -0.4165
+(TIFF includes a number of compression schemes that allow developers to) 70 10 1184 OUT
+-300 -982 -1.5646 -0.4165
+(choose the best space or time tradeoff for their applications.) 62 9 958 OUT
+-350 -920 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -920 -1.5673 -0.4165
+(TIFF is not tied to specific scanners, printers, or computer display hardware.) 78 11 1226 OUT
+-350 -857 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -857 -1.5546 -0.4165
+(TIFF is portable. It does not favor particular operating systems, file systems,) 79 11 1225 OUT
+-300 -807 -1.5765 -0.4165
+(compilers, or processors.) 25 2 403 OUT
+-350 -745 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -745 -1.5560 -0.4165
+(TIFF is designed to be extensible—to evolve gracefully as new needs arise.) 74 11 1211 OUT
+-350 -682 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -682 -1.5680 -0.4165
+(TIFF allows the inclusion of an unlimited amount of private or special-purpose) 78 11 1269 OUT
+-300 -632 0.0000 -0.4196
+(information.) 12 0 202 OUT
+MUST_PRINT_PAGE
+ENDPAGE
+AldusDict2 /SUsv known { SUsv restore } if
+AldusDict2 /AD_TopOfFonts known{ AD_TopOfFonts restore } if
+%%PageTrailer 
+%%PageFonts: 
+%%Page: 6 6
+%%PageProcessColors: 
+%%PageCustomColors: (Black)
+AldusDict2 /SUsv known not {AD_SomethingOnPage SUSAVE} if
+BEGPAGE
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 80 100 mul 1000 div 560 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -1470 0.0253 0.0000
+(TIFF 6.0 Specification) 22 2 324 OUT
+677 -1470 0.0464 0.0000
+(Final—June 3, 1992) 18 2 298 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 80 100 mul 1000 div 560 16  0.00 0.00 0.00 1.00 (Black) false SET
+-39 1503 0.0000 0.0000
+(6) 1 0 19 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-Bold 220 100 mul 1000 div 1520 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -1233 -1.2485 -0.5090
+(Revision Notes) 14 1 654 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 -1055 -1.5796 -0.4165
+(This revision replaces TIFF Revision 5.0.) 41 5 669 OUT
+-350 -980 -1.5612 -0.4165
+(Paragraphs that contain new or substantially-changed information are shown in) 77 9 1274 OUT
+-350 -930 0.0000 -0.4048
+(italics.) 8 0 107 OUT
+ -1275.0 -1650.0 1275.0 1650.0 true PBEGIN
+ 0.0 0.0  LW  true true 2.0 -975.0 -741.0 975.0 -741.0 0.00 0.00 0.00 1.00 (Black) PCOLOR PHANGLINE
+ PEND
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 160 100 mul 1000 div 1120 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -766 -0.9049 -0.3702
+(New Features in Revision 6.0) 28 4 905 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 -645 -1.5570 -0.4165
+(Major enhancements to TIFF 6.0 are described in Part 2. They include:) 69 11 1138 OUT
+-350 -582 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -582 -1.5863 -0.4165
+(CMYK image definition) 21 2 398 OUT
+-350 -520 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -520 -1.5639 -0.4165
+(A revised RGB Colorimetry section.) 34 4 590 OUT
+-350 -457 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -457 -1.5632 -0.4165
+(YCbCr image definition) 22 2 393 OUT
+-350 -395 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -395 -1.5511 -0.4165
+(CIE L*a*b* image definition) 27 3 474 OUT
+-350 -332 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -332 -1.5988 -0.4165
+(Tiled image definition) 22 2 361 OUT
+-350 -270 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -270 -1.5271 -0.4165
+(JPEG compression) 16 1 308 OUT
+ -1275.0 -1650.0 1275.0 1650.0 true PBEGIN
+ 0.0 0.0  LW  true true 2.0 -975.0 -81.0 975.0 -81.0 0.00 0.00 0.00 1.00 (Black) PCOLOR PHANGLINE
+ PEND
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 160 100 mul 1000 div 1120 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -106 0.0000 -0.3776
+(Clarifications) 14 0 417 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 3 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 3 -1.5550 -0.4165
+(The LZW compression section more clearly explains when to switch the cod-) 73 11 1245 OUT
+-300 53 -1.5233 -0.4165
+(ing bit length.) 15 2 224 OUT
+-350 115 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 115 -1.5605 -0.4165
+(The interaction between Compression=2 \050CCITT Huffman\051 and) 57 6 1034 OUT
+-300 165 -1.5455 -0.4165
+(PhotometricInterpretation was clarified.) 40 2 646 OUT
+-350 228 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 228 -1.5697 -0.4165
+(The data organization of uncompressed data \050Compression=1\051 when) 63 7 1103 OUT
+-300 278 -1.5655 -0.4165
+(BitsPerSample is greater than 8 was clarified. See the Compression field de-) 76 11 1224 OUT
+-300 328 0.0000 -0.4121
+(scription.) 10 0 152 OUT
+-350 390 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 390 -1.5596 -0.4165
+(The discussion of CCITT Group 3 and Group 4 bilevel image encodings was) 71 12 1234 OUT
+-300 440 -1.5608 -0.4165
+(clarified and expanded, and Group3Options and Group4Options fields were) 71 8 1223 OUT
+-300 490 -1.5532 -0.4165
+(renamed T4Options and T6Options. See Section 11.) 48 6 841 OUT
+ -1275.0 -1650.0 1275.0 1650.0 true PBEGIN
+ 0.0 0.0  LW  true true 2.0 -975.0 679.0 975.0 679.0 0.00 0.00 0.00 1.00 (Black) PCOLOR PHANGLINE
+ PEND
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 160 100 mul 1000 div 1120 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 654 -0.9947 -0.3702
+(Organizational Changes) 22 1 754 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 762 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 762 -1.5557 -0.4165
+(To make the organization more consistent and expandable, appendices were) 72 9 1224 OUT
+-300 812 -1.5394 -0.4165
+(transformed into numbered sections.) 35 3 590 OUT
+-350 875 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 875 -1.5546 -0.4165
+(The document was divided into two parts—Baseline and Extensions—to help) 71 9 1252 OUT
+-300 925 -1.5513 -0.4165
+(developers make better and more consistent implementation choices. Part 1,) 74 9 1222 OUT
+-300 975 -1.5574 -0.4165
+(the Baseline section, describes those features that all general-purpose TIFF) 76 9 1204 OUT
+-300 1025 -1.5561 -0.4165
+(readers should support. Part 2, the Extensions section, describes a number of) 77 11 1229 OUT
+-300 1075 -1.5687 -0.4165
+(features that can be used by special or advanced applications.) 62 9 983 OUT
+-350 1137 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 1137 -1.5536 -0.4165
+(An index and table of contents were added.) 42 7 694 OUT
+MUST_PRINT_PAGE
+ENDPAGE
+AldusDict2 /SUsv known { SUsv restore } if
+AldusDict2 /AD_TopOfFonts known{ AD_TopOfFonts restore } if
+%%PageTrailer 
+%%PageFonts: 
+%%Page: 7 7
+%%PageProcessColors: 
+%%PageCustomColors: (Black)
+AldusDict2 /SUsv known not {AD_SomethingOnPage SUSAVE} if
+BEGPAGE
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 80 100 mul 1000 div 560 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -1470 0.0253 0.0000
+(TIFF 6.0 Specification) 22 2 324 OUT
+677 -1470 0.0464 0.0000
+(Final—June 3, 1992) 18 2 298 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 80 100 mul 1000 div 560 16  0.00 0.00 0.00 1.00 (Black) false SET
+6 1505 0.0000 0.0000
+(7) 1 0 19 OUT
+ -1275.0 -1650.0 1275.0 1650.0 true PBEGIN
+ 0.0 0.0  LW  true true 2.0 -975.0 -1228.0 975.0 -1228.0 0.00 0.00 0.00 1.00 (Black) PCOLOR PHANGLINE
+ PEND
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 160 100 mul 1000 div 1120 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -1253 -0.8815 -0.3702
+(Changes in Requirements) 23 2 812 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 -1145 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -1145 -1.5638 -0.4165
+(To illustrate a Baseline TIFF file earlier in the document, the material from) 77 12 1202 OUT
+-300 -1095 -1.5665 -0.4165
+(Appendix G \050“TIFF Classes”\051 in Revision 5 was integrated into the main body) 75 12 1260 OUT
+-300 -1045 -1.5682 -0.4165
+(of the specification . As part of this integration, the TIFF Classes terminology) 80 12 1244 OUT
+-300 -995 -1.5560 -0.4165
+(was replaced by the more monolithic Baseline TIFF terminology. The intent) 73 10 1226 OUT
+-300 -945 -1.5658 -0.4165
+(was to further encourage all mainstream TIFF readers to support the Baseline) 76 11 1241 OUT
+-300 -895 -1.5674 -0.4165
+(TIFF requirements for bilevel, grayscale, RGB, and palette-color images.) 72 8 1180 OUT
+-350 -832 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -832 -1.5591 -0.4165
+(Due to licensing issues, LZW compression support was moved out of the “Part) 75 12 1266 OUT
+-300 -782 -1.5706 -0.4165
+(1: Baseline TIFF” and into “Part 2: Extensions.”) 48 7 777 OUT
+-350 -720 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -720 -1.5709 -0.4165
+(Baseline TIFF requirements for bit depths in palette-color images were weak-) 76 10 1249 OUT
+-300 -670 -1.6104 -0.4165
+(ened a bit.) 11 2 165 OUT
+ -1275.0 -1650.0 1275.0 1650.0 true PBEGIN
+ 0.0 0.0  LW  true true 2.0 -975.0 -481.0 975.0 -481.0 0.00 0.00 0.00 1.00 (Black) PCOLOR PHANGLINE
+ PEND
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 160 100 mul 1000 div 1120 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -506 0.2998 -0.3702
+(Changes in T) 12 2 410 OUT
+-565 -506 0.2998 -0.3702
+(erminology) 10 0 356 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 -385 -1.5535 -0.4165
+(In previous versions of the specification, the term “tag” reffered both to the identi-) 86 13 1319 OUT
+-350 -335 -1.5630 -0.4165
+(fying number of a TIFF field and to the entire field. In this version, the term “tag”) 85 16 1305 OUT
+-350 -285 -1.5687 -0.4165
+(refers only to the identifying number. The term “field” refers to the entire field,) 83 13 1268 OUT
+-350 -235 -1.5534 -0.4165
+(including the value.) 20 2 319 OUT
+ -1275.0 -1650.0 1275.0 1650.0 true PBEGIN
+ 0.0 0.0  LW  true true 2.0 -975.0 -46.0 975.0 -46.0 0.00 0.00 0.00 1.00 (Black) PCOLOR PHANGLINE
+ PEND
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 160 100 mul 1000 div 1120 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -71 0.0000 -0.3690
+(Compatibility) 13 0 418 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 50 -1.5669 -0.4165
+(Every attempt has been made to add functionality in such a way as to minimize) 77 14 1268 OUT
+-350 100 -1.5599 -0.4165
+(compatibility problems with files and software that were based on earlier versions) 82 11 1315 OUT
+-350 150 -1.5573 -0.4165
+(of the TIFF specification. The goal is that TIFF files should never become obso-) 80 13 1287 OUT
+-350 200 -1.5555 -0.4165
+(lete and that TIFF software should not have to be revised more frequently than) 78 13 1259 OUT
+-350 250 -1.5596 -0.4165
+(absolutely necessary. In particular, Baseline TIFF 6.0 files will generally be read-) 84 11 1309 OUT
+-350 300 -1.5624 -0.4165
+(able even by older applications that assume TIFF 5.0 or an earlier version of the) 81 14 1279 OUT
+-350 350 0.0000 -0.4116
+(specification.) 14 0 218 OUT
+-350 425 -1.5581 -0.4165
+(However, TIFF 6.0 files that use one of the major new extensions, such as a new) 79 15 1289 OUT
+-350 475 -1.5660 -0.4165
+(compression scheme or color space, will not be successfully read by older soft-) 79 12 1269 OUT
+-350 525 -1.5643 -0.4165
+(ware. In such cases, the older applications must gracefully give up and refuse to) 81 13 1278 OUT
+-350 575 -1.5677 -0.4165
+(import the image, providing the user with a reasonably informative message.) 75 10 1233 OUT
+MUST_PRINT_PAGE
+ENDPAGE
+AldusDict2 /SUsv known { SUsv restore } if
+AldusDict2 /AD_TopOfFonts known{ AD_TopOfFonts restore } if
+%%PageTrailer 
+%%PageFonts: 
+%%Page: 8 8
+%%PageProcessColors: 
+%%PageCustomColors: (Black)
+AldusDict2 /SUsv known not {AD_SomethingOnPage SUSAVE} if
+BEGPAGE
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 80 100 mul 1000 div 560 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -1470 0.0253 0.0000
+(TIFF 6.0 Specification) 22 2 324 OUT
+677 -1470 0.0464 0.0000
+(Final—June 3, 1992) 18 2 298 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 80 100 mul 1000 div 560 16  0.00 0.00 0.00 1.00 (Black) false SET
+-39 1503 0.0000 0.0000
+(8) 1 0 19 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-Bold 220 100 mul 1000 div 1520 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -1233 -1.3181 -0.5090
+(TIFF ) 5 1 212 OUT
+-763 -1233 -1.3181 -0.5090
+(Administration) 14 0 640 OUT
+ -1275.0 -1650.0 1275.0 1650.0 true PBEGIN
+ 0.0 0.0  LW  true true 2.0 -975.0 -942.0 975.0 -942.0 0.00 0.00 0.00 1.00 (Black) PCOLOR PHANGLINE
+ PEND
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 160 100 mul 1000 div 1120 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -966 -0.0248 -0.3702
+(Information and Support) 23 2 769 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 -846 -1.5710 -0.4165
+(The most recent version of the TIFF specification in PostScript format is available) 83 12 1319 OUT
+-350 -796 -1.5622 -0.4165
+(on CompuServe \050"Go ALDSVC", Library 10\051 and on AppleLink \050Aldus Devel-) 70 10 1284 OUT
+-350 -746 -1.5609 -0.4165
+(opers Icon\051. Sample TIFF files and other TIFF developer information can also be) 79 12 1301 OUT
+-350 -696 -1.5839 -0.4165
+(found at these locations.) 25 3 390 OUT
+-350 -621 -1.5645 -0.4165
+(The Aldus CompuServe forum \050Go ALDSVC\051 can also be used to post messages) 72 12 1305 OUT
+-350 -571 -1.5685 -0.4165
+(to other TIFF developers, enabling developers to help each other.) 65 9 1048 OUT
+-350 -496 -1.5581 -0.4165
+(Because of the tremendous growth in the usage of TIFF, Aldus is no longer able to) 81 15 1322 OUT
+-350 -446 -1.5595 -0.4165
+(provide a general consulting service for TIFF implementors. TIFF developers are) 79 10 1307 OUT
+-350 -396 -1.5529 -0.4165
+(encouraged to study sample TIFF files, read TIFF documentation thoroughly, and) 78 10 1315 OUT
+-350 -346 -1.5613 -0.4165
+(work with developers of other products that are important to you.) 65 10 1046 OUT
+-350 -271 -1.5656 -0.4165
+(Most companies that use TIFF can answer questions about support for TIFF in) 75 12 1260 OUT
+-350 -221 -1.5580 -0.4165
+(their products. Contact the appropriate product manager or developer support) 76 9 1244 OUT
+-350 -171 -1.6210 -0.4165
+(service group.) 14 1 229 OUT
+-350 -96 -1.5665 -0.4165
+(If you are an experienced TIFF developer and are interested in contract program-) 80 12 1299 OUT
+-350 -46 -1.5628 -0.4165
+(ming for other developers, please contact Aldus. Aldus can give your name to) 76 12 1248 OUT
+-350 4 -1.5572 -0.4165
+(others that might need your services.) 37 5 590 OUT
+ -1275.0 -1650.0 1275.0 1650.0 true PBEGIN
+ 0.0 0.0  LW  true true 2.0 -975.0 192.0 975.0 192.0 0.00 0.00 0.00 1.00 (Black) PCOLOR PHANGLINE
+ PEND
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 160 100 mul 1000 div 1120 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 168 0.3978 -0.3702
+(Private Fields and V) 20 3 624 OUT
+-351 168 0.3978 -0.3702
+(alues) 5 0 169 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 287 -1.5540 -0.4165
+(An organization might wish to store information meaningful to only that organi-) 79 11 1289 OUT
+-350 337 -1.5697 -0.4165
+(zation in a TIFF file. Tags numbered 32768 or higher, sometimes called private) 78 12 1275 OUT
+-350 387 -1.5640 -0.4165
+(tags, are reserved for that purpose.) 36 5 552 OUT
+-350 462 -1.5645 -0.4165
+(Upon request, the TIFF administrator \050the Aldus Developers Desk\051 will allocate) 78 10 1286 OUT
+-350 512 -1.5661 -0.4165
+(and register a block of private tags for an organization, to avoid possible conflicts) 85 13 1305 OUT
+-350 562 -1.5619 -0.4165
+(with other organizations. Tags are normally allocated in blocks of five or less.) 80 12 1249 OUT
+-350 612 -1.5674 -0.4165
+(You do not need to tell the TIFF administrator or anyone else what you plan to use) 82 16 1320 OUT
+-350 662 -1.4642 -0.4165
+(them for.) 9 1 148 OUT
+-350 737 -1.5600 -0.4165
+(Private enumerated values can be accommodated in a similar fashion. For ex-) 75 11 1245 OUT
+-350 787 -1.5615 -0.4165
+(ample, you may wish to experiment with a new compression scheme within TIFF.) 76 12 1320 OUT
+-350 837 -1.5678 -0.4165
+(Enumeration constants numbered 32768 or higher are reserved for private usage.) 78 10 1300 OUT
+-350 887 -1.5644 -0.4165
+(Upon request, the administrator will allocate and register one or more enumerated) 81 11 1315 OUT
+-350 937 -1.5685 -0.4165
+(values for a particular field \050Compression, in our example\051, to avoid possible) 78 11 1234 OUT
+-350 987 0.0000 -0.4070
+(conflicts.) 10 0 150 OUT
+-350 1062 -1.5560 -0.4165
+(Tags and values allocated in the private number range are not prohibited from) 77 12 1248 OUT
+-350 1112 -1.5599 -0.4165
+(being included in a future revision of this specification. Several such instances) 81 11 1257 OUT
+-350 1162 -1.5813 -0.4165
+(exist in the TIFF specification.) 32 4 493 OUT
+-350 1237 -1.5685 -0.4165
+(Do not choose your own tag numbers. Doing so could cause serious compatibility) 78 12 1313 OUT
+-350 1287 -1.5684 -0.4165
+(problems in the future.) 23 3 366 OUT
+MUST_PRINT_PAGE
+ENDPAGE
+AldusDict2 /SUsv known { SUsv restore } if
+AldusDict2 /AD_TopOfFonts known{ AD_TopOfFonts restore } if
+%%PageTrailer 
+%%PageFonts: 
+%%Page: 9 9
+%%PageProcessColors: 
+%%PageCustomColors: (Black)
+AldusDict2 /SUsv known not {AD_SomethingOnPage SUSAVE} if
+BEGPAGE
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 80 100 mul 1000 div 560 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -1470 0.0253 0.0000
+(TIFF 6.0 Specification) 22 2 324 OUT
+677 -1470 0.0464 0.0000
+(Final—June 3, 1992) 18 2 298 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 80 100 mul 1000 div 560 16  0.00 0.00 0.00 1.00 (Black) false SET
+6 1505 0.0000 0.0000
+(9) 1 0 19 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 -1267 -1.5653 -0.4165
+(If you need more than 5 or 10 tags, Aldus suggests that you reserve a single pri-) 81 16 1273 OUT
+-350 -1217 -1.5674 -0.4165
+(vate tag, define it as a LONG, and use its value as a pointer \050offset\051 to a private) 83 17 1259 OUT
+-350 -1167 -1.5673 -0.4165
+(IFD or other data structure of your choosing. Within that IFD, you can use what-) 80 14 1292 OUT
+-350 -1117 -1.5638 -0.4165
+(ever tags you want, since no one else will know that it is an IFD unless you tell) 81 17 1259 OUT
+-350 -1067 -1.5484 -0.4165
+(them. This gives you some 65,000 private tags.) 46 7 757 OUT
+ -1275.0 -1650.0 1275.0 1650.0 true PBEGIN
+ 0.0 0.0  LW  true true 2.0 -975.0 -879.0 975.0 -879.0 0.00 0.00 0.00 1.00 (Black) PCOLOR PHANGLINE
+ PEND
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 160 100 mul 1000 div 1120 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -903 0.0332 -0.3702
+(Submitting a Proposal) 21 2 700 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 -784 -1.5586 -0.4165
+(Any person or group that wants to propose a change or addition to the TIFF speci-) 81 15 1314 OUT
+-350 -734 -1.5523 -0.4165
+(fication should prepare a proposal that includes the following information:) 75 9 1197 OUT
+-350 -671 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -671 -1.5546 -0.4165
+(Name of the person or group making the request, and your affiliation.) 69 11 1115 OUT
+-350 -609 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -609 -1.5477 -0.4165
+(The reason for the request.) 27 4 428 OUT
+-350 -546 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -546 -1.5596 -0.4165
+(A list of changes exactly as you propose that they appear in the specification.) 79 13 1234 OUT
+-300 -496 -1.5559 -0.4165
+(Use inserts, callouts, or other obvious editorial techniques to indicate areas of) 81 11 1242 OUT
+-300 -446 -1.5415 -0.4165
+(change, and number each change.) 31 4 544 OUT
+-350 -384 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -384 -1.5582 -0.4165
+(Discussion of the potential impact on the installed base.) 57 8 893 OUT
+-350 -321 0.0000 0.0000
+(•) 1 0 15 OUT
+-300 -321 -1.5624 -0.4165
+(A list of contacts outside your company that support your position. Include) 75 11 1202 OUT
+-300 -271 -1.6574 -0.4165
+(their affiliation.) 18 1 253 OUT
+-350 -196 -1.5527 -0.4165
+(Please send your proposal to Internet address: tiff-input@aldus.com. \050From) 74 8 1215 OUT
+-350 -146 -1.5464 -0.4165
+(AppleLink, you can send to: tiff-input@aldus.com@internet#. From) 64 6 1105 OUT
+-350 -96 -1.5585 -0.4165
+(CompuServe, you can send to: >INTERNET:tiff-input@aldus.com.\051 Do not send) 73 8 1312 OUT
+-350 -46 -1.5595 -0.4165
+(TIFF implementation questions to this address; see above for Aldus Developers) 77 10 1281 OUT
+-350 4 -1.5945 -0.4165
+(Desk TIFF support policies.) 27 3 452 OUT
+ -1275.0 -1650.0 1275.0 1650.0 true PBEGIN
+ 0.0 0.0  LW  true true 2.0 -975.0 192.0 975.0 192.0 0.00 0.00 0.00 1.00 (Black) PCOLOR PHANGLINE
+ PEND
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 160 100 mul 1000 div 1120 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 168 0.0090 -0.3702
+(The TIFF ) 9 2 290 OUT
+-685 168 0.0090 -0.3702
+(Advisory Committee) 18 1 642 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 287 -1.5654 -0.4165
+(The TIFF Advisory Committee is a working group of TIFF experts from a number) 76 13 1324 OUT
+-350 337 -1.5641 -0.4165
+(of hardware and software manufacturers. It was formed in the spring of 1991 to) 78 13 1273 OUT
+-350 387 -1.5588 -0.4165
+(provide a forum for debating and refining proposals for the 6.0 release of the TIFF) 83 14 1320 OUT
+-350 437 -1.5593 -0.4165
+(specification. It is not clear if this will be an ongoing group or if it will go into a) 87 18 1270 OUT
+-350 487 -1.5667 -0.4165
+(period of hibernation until pressure builds for another major release of the TIFF) 81 12 1278 OUT
+-350 537 0.0000 -0.4116
+(specification.) 14 0 218 OUT
+-350 612 -1.5655 -0.4165
+(If you are a TIFF expert and think you have the time and interest to work on this) 81 17 1281 OUT
+-350 662 -1.5524 -0.4165
+(committee, contact the Aldus Developers Desk for further information. For the) 77 10 1267 OUT
+-350 712 -1.5560 -0.4165
+(TIFF 6.0 release, the group met every two or three months, usually on the west) 78 14 1262 OUT
+-350 762 -1.5665 -0.4165
+(coast of the U.S. Accessibility via Internet e-mail \050or AppleLink or CompuServe,) 80 11 1306 OUT
+-350 812 -1.5670 -0.4165
+(which have gateways to the Internet\051 is a requirement for membership, since that) 80 12 1296 OUT
+-350 862 -1.5703 -0.4165
+(has proven to be an invaluable means for getting work done between meetings.) 76 12 1268 OUT
+ -1275.0 -1650.0 1275.0 1650.0 true PBEGIN
+ 0.0 0.0  LW  true true 2.0 -975.0 1050.0 975.0 1050.0 0.00 0.00 0.00 1.00 (Black) PCOLOR PHANGLINE
+ PEND
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica-BoldOblique 160 100 mul 1000 div 1120 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 1026 0.0441 -0.3702
+(Other TIFF Extensions) 21 2 704 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 1146 -1.5697 -0.4165
+(The Aldus TIFF sections on CompuServe and AppleLink will contain proposed) 73 10 1283 OUT
+-350 1196 -1.5698 -0.4165
+(extensions from Aldus and other companies that are not yet approved by the TIFF) 79 13 1314 OUT
+-350 1246 -1.4741 -0.4165
+(Advisory Committee.) 19 1 352 OUT
+-350 1321 -1.5579 -0.4165
+(Many of these proposals will never be approved or even considered by the TIFF) 77 13 1284 OUT
+-350 1371 -1.5540 -0.4165
+(Advisory Committee, especially if they represent specialized uses of TIFF that do) 81 11 1313 OUT
+MUST_PRINT_PAGE
+ENDPAGE
+AldusDict2 /SUsv known { SUsv restore } if
+AldusDict2 /AD_TopOfFonts known{ AD_TopOfFonts restore } if
+%%PageTrailer 
+%%PageFonts: 
+%%Page: 10 10
+%%PageProcessColors: 
+%%PageCustomColors: (Black)
+AldusDict2 /SUsv known not {AD_SomethingOnPage SUSAVE} if
+BEGPAGE
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 80 100 mul 1000 div 560 16  0.00 0.00 0.00 1.00 (Black) false SET
+-975 -1470 0.0253 0.0000
+(TIFF 6.0 Specification) 22 2 324 OUT
+677 -1470 0.0464 0.0000
+(Final—June 3, 1992) 18 2 298 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Helvetica 80 100 mul 1000 div 560 16  0.00 0.00 0.00 1.00 (Black) false SET
+-49 1503 0.0000 0.0331
+(10) 2 0 37 OUT
+AldusDict2 /SUsv known {SURSTR} {AD_SomethingOnPage} ifelse
+SUSAVE
+/|______Times-Roman 100 100 mul 1000 div 740 16  0.00 0.00 0.00 1.00 (Black) false SET
+-350 -1267 -1.5558 -0.4165
+(not fall within the domain of publishing or general graphics or picture inter-) 78 12 1215 OUT
+-350 -1217 -1.5633 -0.4165
+(change. Use them at your own risk; it is unlikely that these features will be widely) 84 15 1312 OUT
+-350 -1167 -1.5591 -0.4165
+(supported. And if you do write files that incorporate these extensions, be sure to) 82 13 1280 OUT
+-350 -1117 -1.5647 -0.4165
+(not call them TIFF files or to mark them in some way so that they will not be) 77 17 1227 OUT
+-350 -1067 -1.5436 -0.4165
+(confused with mainstream TIFF files.) 36 4 607 OUT
+-350 -992 -1.5674 -0.4165
+(Aldus will provide a place on Compuserve and Applelink for storing such docu-) 77 12 1287 OUT
+-350 -942 -1.5642 -0.4165
+(ments. Contact the Aldus Developers Desk for instructions. We recommend that) 76 10 1293 OUT
+-350 -892 -1.5606 -0.4165
+(all submissions be in the form of simple text or portable PostScript form that can) 82 14 1291 OUT
+-350 -842 -1.5598 -0.4165
+(be downloaded to any PostScript printer in any computing environment.) 69 9 1161 OUT
+-350 -767 -1.5665 -0.4165
+(If a non-Aldus contact name is listed, please use that contact rather than Aldus for) 84 14 1310 OUT
+-350 -717 -1.5503 -0.4165
+(submitting requests for future enhancements to that extension.) 62 7 1000 OUT
+MUST_PRINT_PAGE
+ENDPAGE
+AldusDict2 /SUsv known { SUsv restore } if
+AldusDict2 /AD_TopOfFonts known{ AD_TopOfFonts restore } if
+%%PageTrailer 
+%%PageFonts: 
+%%Trailer 
+%%DocumentFonts: Courier
+%%+ Courier-Bold
+%%+ Helvetica
+%%+ Helvetica-Bold
+%%+ Helvetica-BoldOblique
+%%+ Helvetica-Oblique
+%%+ Times-Bold
+%%+ Times-BoldItalic
+%%+ Times-Italic
+%%+ Times-Roman
+%%DocumentSuppliedFonts: 
+%%DocumentNeededFonts: Courier
+%%+ Courier-Bold
+%%+ Helvetica
+%%+ Helvetica-Bold
+%%+ Helvetica-BoldOblique
+%%+ Helvetica-Oblique
+%%+ Times-Bold
+%%+ Times-BoldItalic
+%%+ Times-Italic
+%%+ Times-Roman
+%%EOF 
